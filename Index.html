@@ -7,28 +7,40 @@
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
                 font-weight: bold;
             }
+            img {
+                box-shadow: 5px 5px 5px grey;
+            }
             .namePhoto {
                 background-color: #abb7ab;
                 text-align: center;
                 width: 300px;
-                height: 400px;
+                height: 350px;
+                padding: 1%;
+                margin-left: auto;
+                margin-right: auto;
             }
             .assignmentPortal {
                 border-bottom: double grey;
                 text-align: center;
                 width: 300px;
+                margin-left: auto;
+                margin-right: auto;
             }
             .lessonLinks {
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
                 width: 300px;
+                margin-left: auto;
+                margin-right: auto;
             }
             footer {
                 background-color: #abb7ab;
                 text-align: center;
-                width: 300px;
-            }
-            img {
-                box-shadow: 4px 3px 4px grey;
+                max-width: 300px;
+                max-height: 75px;
+                font-size: small;
+                padding: 15px;
+                margin-left: auto;
+                margin-right: auto;
             }
         </style>
         <title>Martherus Index</title>
@@ -51,8 +63,8 @@
         </body>
         <footer>
             <p>&copy; <span id = year></span> | Nathan Martherus |
-                 <a href="https://developer.mozilla.org/en-US/" style="color: blue">MDN Documentation Site</a> | BYU-Idaho</p>
-            <p>Last Updated <span id='modified'></span></p>
+                 <a href="https://developer.mozilla.org/en-US/" style="color: blue">MDN Documentation Site</a>
+                  | BYU-Idaho | Last Updated <span id='modified'></span></p>
         </footer>
 
     <script> document.getElementById('modified').innerHTML = document.lastModified;

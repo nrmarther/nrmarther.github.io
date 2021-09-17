@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1,h2 {
+                color: #4b7395;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+                font-weight: bold;
+            }
+            img {
+                box-shadow: 5px 5px 5px grey;
+            }
+            .namePhoto {
+                background-color: #abb7ab;
+                text-align: center;
+                width: 300px;
+                height: 350px;
+                padding: 1%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .assignmentPortal {
+                border-bottom: double grey;
+                text-align: center;
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .lessonLinks {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            footer {
+                background-color: #abb7ab;
+                text-align: center;
+                max-width: 300px;
+                max-height: 75px;
+                font-size: small;
+                padding: 15px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+        <title>Martherus Index</title>
+    </head>
+        <body>
+            <div class = namePhoto>
+                <h1>Nathan Martherus</h1>
+                <img src="wayBetterSelfPortrait.jpg" alt="uuhhh whoops" width="220" height="250">
+            </div>
+            <div class = "assignmentPortal">
+                <h2>WDD 230: Assignment Portal</h2>
+            </div>
+            <div class = "lessonLinks">
+                <p>Lesson 02 | <a href="" style="color: blue">Design Principles</a></p>
+                <p>Lesson 03 | <a href="" style="color: blue">Weather Site Plan</a></p>
+                <p>Lesson 04 | <a href="" style="color: blue">Link</a></p>
+                <p>Lesson 05 | <a href="" style="color: blue">Link</a></p>
+                <p>Lesson 06 | <a href="" style="color: blue">Link</a></p>
+            </div>
+        </body>
+        <footer>
+            <p>&copy; <span id = year></span> | Nathan Martherus |
+                 <a href="https://developer.mozilla.org/en-US/" style="color: blue">MDN Documentation Site</a>
+                  | BYU-Idaho | Last Updated <span id='modified'></span></p>
+        </footer>
+
+    <script> document.getElementById('modified').innerHTML = document.lastModified;
+        let date = new Date();
+        document.getElementById('year').innerHTML = date.getUTCFullYear();
+    </script>
+</html>

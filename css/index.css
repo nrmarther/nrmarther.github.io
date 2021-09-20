@@ -10,15 +10,15 @@
  /* 1. Imports */
 
  /* 2a. General */
-
- /* 2b. Mobile */
-
- /* 3. Midsize */
-
-/* 4. Large */
-
-/* 5. Really Large */
-
+ header {
+    background-color: #abb7ab;
+    text-align: center;
+    width: 100%;
+    height: 40%;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
     h1,h2 {
         font-family: 'Merriweather', serif;
         font-weight: bold;
@@ -30,41 +30,44 @@
     h2{
         color: #607B8B;
     }
+
+.assignmentPortal {
+    border-bottom: double grey;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lessonLinks {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+    ul li {
+        list-style-type: none; 
+    }
+
+footer {
+    background-color: #abb7ab;
+    text-align: center;
+    max-width: 100%;
+    font-size: small;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ /* 2b. Mobile */
+
+ /* 3. Midsize */
+
+/* 4. Large */
+
+/* 5. Really Large */
+
     img {
         box-shadow: 5px 5px 5px grey;
     }
-    header {
-        background-color: #abb7ab;
-        text-align: center;
-        width: 300px;
-        height: 350px;
-        padding: 1%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .assignmentPortal {
-        border-bottom: double grey;
-        text-align: center;
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .lessonLinks {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    ul li {
-       list-style-type: none; 
-    }
-    footer {
-        background-color: #abb7ab;
-        text-align: center;
-        max-width: 300px;
-        max-height: 75px;
-        font-size: small;
-        padding: 15px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
+

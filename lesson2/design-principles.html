@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="lesson2/design-principles.css">
+
+    <title>Design Principles</title>
+</head>
+<body>
+    <header>
+        <h1>Design Principles</h1>
+    </header>
+    <main>
+        <h2>Principle 1: Proximity</h2>
+        <!-- add the following
+                - company name wher example found
+                - URL of webpage used
+                - mobile screenshot of webpage
+                - description of how the deisgn is exeplified
+         -->
+        <h2>Principle 2: Alignment</h2>
+        <!-- add the following
+                - company name wher example found
+                - URL of webpage used
+                - mobile screenshot of webpage
+                - description of how the deisgn is exeplified
+         -->
+        <h2>Principle 3: Contrast</h2>
+        <!-- add the following
+                - company name wher example found
+                - URL of webpage used
+                - mobile screenshot of webpage
+                - description of how the deisgn is exeplified
+         -->
+    </main>
+    
+
+    <footer>
+        <p>&copy; <span id = year></span> | Nathan Martherus |
+                 <a href="https://developer.mozilla.org/en-US/" style="color: #000080">MDN Documentation Site</a>
+                  | BYU-Idaho | Last Updated <span id='modified'></span></p>
+    </footer>
+
+    <script> document.getElementById('modified').innerHTML = document.lastModified;
+        let date = new Date();
+        document.getElementById('year').innerHTML = date.getUTCFullYear();
+    </script>
+    
+</body>
+</html>

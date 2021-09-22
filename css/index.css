@@ -57,28 +57,43 @@
 footer {
     background-color: #abb7ab;
     text-align: center;
-    max-width: 100%;
+    width: 100%;
     font-size: small;
     padding: 1%;
     margin-left: auto;
     margin-right: auto;
+    position: absolute;
+    bottom: 0;
+    
 }
+
+
  /* 2b. Mobile */
+ .columns{ 
+    margin: 5rem auto;
+    width: min(90%, 75rem);
+    display: grid;
+    grid-auto-flow: row;
+    gap: 2em;
+}
 
  /* 3. Midsize */
  @media (min-width: 32.5em){
-    img {
-        align-content: right;
+    .selfportrait{
+        float: right;
+        position: relative;
+        right: 30px;
     }
-    header {
-        text-align: left;
-        height: 15%;
-    }
-    .assignmentPortal {
-        text-align: left;
-    }
+}
 
- }
+@media (min-width: 55em){
+    .columns{
+        grid-auto-flow: column;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+
 
 /* 4. Large */
 

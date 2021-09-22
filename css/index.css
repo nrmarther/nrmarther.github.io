@@ -67,11 +67,19 @@ footer {
 
  /* 3. Midsize */
  @media (min-width: 32.5em){
+    img {
+        align-content: right;
+    }
+    header {
+        text-align: left;
+        height: 15%;
+    }
+    .assignmentPortal {
+        text-align: left;
+    }
 
  }
 
 /* 4. Large */
 
 /* 5. Really Large */
-
-

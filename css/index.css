@@ -69,32 +69,48 @@ footer {
 
 
  /* 2b. Mobile */
- .columns{ 
+ /* .columns{ 
     margin: 5rem auto;
     width: min(90%, 75rem);
     display: grid;
     grid-auto-flow: row;
     gap: 2em;
-}
+} */
 
  /* 3. Midsize */
  @media (min-width: 32.5em){
+
     .selfportrait{
         float: right;
         position: relative;
-        right: 30px;
+        right: 50px;
+    }
+
+    /* .columns{
+        grid-auto-flow: column;
+        grid-template-columns: 50% 50%;
+        padding: 1em;
+    } */
+    .Principles, .exampleName, .exampleReference, .description {  
+        grid-column: 1 / span 1;
+    }
+
+    .exampleImg {
+        grid-column: 2 / span 1;
+    }
+
+    header, .assignmentPortal {
+        text-align: left;
+        padding: 1em;
     }
 }
 
-@media (min-width: 55em){
+/* 4. Large */
+@media (min-width: 100em){
     .columns{
         grid-auto-flow: column;
         grid-template-columns: 33% 33% 33%;
     }
 }
-
-
-
-/* 4. Large */
 
 /* 5. Really Large */

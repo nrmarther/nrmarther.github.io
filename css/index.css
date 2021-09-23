@@ -69,13 +69,13 @@ footer {
 
 
  /* 2b. Mobile */
- /* .columns{ 
+ .columns{ 
     margin: 5rem auto;
     width: min(90%, 75rem);
     display: grid;
     grid-auto-flow: row;
     gap: 2em;
-} */
+}
 
  /* 3. Midsize */
  @media (min-width: 32.5em){
@@ -86,11 +86,11 @@ footer {
         right: 50px;
     }
 
-    /* .columns{
+    .columns{
         grid-auto-flow: column;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 33% 33% 33%;
         padding: 1em;
-    } */
+    }
     .Principles, .exampleName, .exampleReference, .description {  
         grid-column: 1 / span 1;
     }

@@ -8,8 +8,13 @@
  */
 
  /* 1. Imports */
+ @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300,500&display=swap');
 
  /* 2a. General */
+ body {
+    height: 100%;
+    min-height: 100%;
+ }
  header {
     background-color: #abb7ab;
     text-align: center;
@@ -22,7 +27,7 @@
     h1,h2 {
         font-family: 'Merriweather', serif;
         font-weight: bold;
-        font-size:x-large;
+        font-size:xx-large;
     }
     h1 {
         color: #283B48;
@@ -54,6 +59,18 @@
         list-style-type: none; 
     }
 
+    .exampleName {
+        padding-bottom: 1em;
+        font-family: 'Comfortaa';
+        font-weight: 500;
+    }
+
+    .description {
+        padding-top: 2em;
+        font-family: 'Comfortaa';
+        font-weight: 300;
+    }
+    
 footer {
     background-color: #abb7ab;
     text-align: center;
@@ -62,7 +79,7 @@ footer {
     padding: 1%;
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
+    position: relative;
     bottom: 0;
     
 }
@@ -99,7 +116,7 @@ footer {
         grid-column: 2 / span 1;
     }
 
-    header, .assignmentPortal {
+    .name_title, .assignmentPortal {
         text-align: left;
         padding: 1em;
     }

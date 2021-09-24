@@ -13,7 +13,7 @@
  /* 2a. General */
  body {
     height: 100%;
-    ;min-height: 100%;
+    min-height: 100%;
  }
  header {
     background-color: #abb7ab;
@@ -24,13 +24,17 @@
     margin-left: auto;
     margin-right: auto;
 }
+.selfportrait {
+    margin-left: auto;
+    margin-right: auto;
+}
     h1,h2 {
         font-family: 'Merriweather', serif;
         font-weight: bold;
         font-size:xx-large;
     }
     h1 {
-        color: #283B48;
+        color: #435860;
     }
     h2{
         color: #607B8B;
@@ -59,7 +63,15 @@
         list-style-type: none; 
     }
 
-    .PrincipleName1, .PrincipleName2, .PrincipleName3 {
+    .columns {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .principle1, .principle2, .principle3 {
+        border-style:solid;
+        border-color: grey;
+        border-radius: 10px;
         text-align: center;
     }
 
@@ -84,9 +96,7 @@
         margin-left: auto;
         margin-right: auto;
     } 
-    .exampleReference1, .exampleReference2, .exampleReference3 {
-        text-align: center;
-    }
+    
     
 footer {
     background-color: #abb7ab;
@@ -114,26 +124,24 @@ footer {
  /* 3. Midsize */
  @media (min-width: 32.5em){
 
+/* --------------------------------------------------------- Index Page ----------------------------------------------------- */
     .selfportrait{
         float: right;
         position: relative;
         right: 50px;
     }
 
+/* -------------------------------------------------- design principles page -------------------------------------------------*/
     .columns{
         grid-template-columns: 50% 50%;
         padding: 1em;
     }
     
-
     .name_title, .assignmentPortal {
         text-align: left;
         padding: 1em;
     }
-
-    .Principles {
-        text-align: center;
-    }
+    
     .principle2, .principle3 {
         background-color: #435860;
     }
@@ -145,11 +153,19 @@ footer {
         color: #435860;
     }
 
+    .principle2 a, .principle3 a{
+        color: white;
+    }
+
+    .principle1 a {
+        color: #435860;
+    }
+
 }
 
 
 /* 4. Large */
-@media (min-width: 75em){
+@media (min-width: 80em){
     .columns{
         grid-auto-flow: column;
         grid-template-columns: 33% 33% 33%;
@@ -158,12 +174,20 @@ footer {
     .principle1, .principle3 {
         background-color: #435860;
     }
+
     .exampleName1, .exampleName3, .PrincipleName1, .PrincipleName3, .description1, .description3 {
         background-color: #435860;
         color: white;
     }
     .principle2, .PrincipleName2, .exampleName2, .description2 {
         background-color: white;
+        color: #435860;
+    }
+    .principle1 a, .principle3 a{
+        color: white;
+    }
+
+    .principle2 a {
         color: #435860;
     }
     

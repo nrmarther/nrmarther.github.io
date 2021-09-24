@@ -104,26 +104,25 @@ footer {
     }
 
     .columns{
-        grid-auto-flow: column;
-        grid-template-columns: 33% 33% 33%;
+        
+        grid-template-columns: 50% 50%;
         padding: 1em;
     }
-    .Principles, .exampleName, .exampleReference, .description {  
-        grid-column: 1 / span 1;
-    }
-
-    .exampleImg {
-        grid-column: 2 / span 1;
-    }
+    
 
     .name_title, .assignmentPortal {
         text-align: left;
         padding: 1em;
     }
+
+    .Principles {
+        text-align: center;
+    }
 }
 
+
 /* 4. Large */
-@media (min-width: 100em){
+@media (min-width: 75em){
     .columns{
         grid-auto-flow: column;
         grid-template-columns: 33% 33% 33%;

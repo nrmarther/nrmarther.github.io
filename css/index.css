@@ -17,12 +17,20 @@
  }
  header {
     background-color: #abb7ab;
-    text-align: center;
     width: 100%;
     height: 40%;
     padding: 1%;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+}
+header a {
+    text-decoration: none;
+    color: #435860;
+    font-family: 'Merriweather', serif;
+    /* font-weight: bold;
+    font-size:xx-large; */
+}
+.page_title {
+    text-align: center;
 }
 .selfportrait {
     margin-left: auto;
@@ -62,6 +70,8 @@
     ul li {
         list-style-type: none; 
     }
+
+    header
 
     .columns {
         margin-left: auto;
@@ -113,18 +123,20 @@ footer {
 
 
  /* 2b. Mobile */
- .columns{ 
-    margin: 5rem auto;
-    width: min(90%, 75rem);
-    display: grid;
-    grid-auto-flow: row;
-    gap: 2em;
-}
+    .columns{ 
+        margin: 5rem auto;
+        width: min(90%, 75rem);
+        display: grid;
+        grid-auto-flow: row;
+        gap: 2em;
+    }
+ 
 
  /* 3. Midsize */
  @media (min-width: 32.5em){
 
 /* --------------------------------------------------------- Index Page ----------------------------------------------------- */
+   
     .selfportrait{
         float: right;
         position: relative;
@@ -132,9 +144,10 @@ footer {
     }
 
 /* -------------------------------------------------- design principles page -------------------------------------------------*/
+    
     .columns{
         grid-template-columns: 50% 50%;
-        padding: 1em;
+        padding: 2em;
     }
     
     .name_title, .assignmentPortal {
@@ -166,6 +179,21 @@ footer {
 
 /* 4. Large */
 @media (min-width: 80em){
+
+/* --------------------------------------------------------- Index Page ----------------------------------------------------- */
+
+    header {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .selfportrait {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* -------------------------------------------------- design principles page -------------------------------------------------*/
+
     .columns{
         grid-auto-flow: column;
         grid-template-columns: 33% 33% 33%;

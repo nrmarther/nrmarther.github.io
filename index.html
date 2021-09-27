@@ -6,8 +6,8 @@
 
 
         <!-- import style and script pages -->
-        <link rel="stylesheet" href="css/normalize.css" as="style">
-        <link rel="stylesheet" href="css/index.css" as="style">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/index.css">
 
         <!-- add font for headings -->
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -37,12 +37,12 @@
                 </ul>
             </div>
             </main>
-        </body>
-        <footer>
-            <p>&copy; <span id = year></span> | Nathan Martherus |
-                 <a href="https://developer.mozilla.org/en-US/" style="color: #000080">MDN Documentation Site</a>
-                  | BYU-Idaho | Last Updated <span id='modified'></span></p>
-        </footer>
+            <footer>
+                <p>&copy; <span id = year></span> | Nathan Martherus |
+                     <a href="https://developer.mozilla.org/en-US/" style="color: #000080">MDN Documentation Site</a>
+                      | BYU-Idaho | Last Updated <span id='modified'></span></p>
+            </footer>
+        </body> 
     <script> document.getElementById('modified').innerHTML = document.lastModified;
         let date = new Date();
         document.getElementById('year').innerHTML = date.getUTCFullYear();

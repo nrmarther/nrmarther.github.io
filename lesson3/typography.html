@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/lesson3.css">
 
-    <!-- link to roboto condensed -- primary font -->
+    <!-- link to roboto condensed primary font -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 
-    <!-- link to Roboo Slab-- secondary font -->
+    <!-- link to Roboo Slab secondary font -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
     <title>Crop Watch | Typography</title>
 </head>
     <body>
-        <div id="wrapper"></div>
+        <div id="wrapper">
             <header id="page-header">
                 <img src="../media/weatherLogo.jpg" alt="site plan logo">
                 <h1>Crop Watch</h1>
@@ -36,8 +36,9 @@
                 </ul>
             </nav>
             <main>
-                <h1>Typography</h1>
+                
                 <section class="fonts">
+                    <h1>Typography</h1>
                     <section class="fontOne">
                         <h2>Roboto Condensed</h2>
                         <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -45,7 +46,7 @@
                             1234567890</p>
                         <p>used for most text on webpages</p>
                     </section>
-                    <sectio class="fontTwo">
+                    <section class="fontTwo">
                         <h2>Roboto Slab</h2>
                         <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ
                             abcdefghijklmnopqrstuvwxyz
@@ -64,6 +65,6 @@
                 let date = new Date();
                 document.getElementById('year').innerHTML = date.getUTCFullYear();
             </script>
-        <div id="wrapper"></div>
+        </div>
     </body>
 </html>

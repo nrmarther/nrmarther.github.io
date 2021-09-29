@@ -1,0 +1,134 @@
+
+/* general */
+body {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+header {
+    width: 100%;
+    max-width: 100%;
+    height: 40%;
+    padding: 1%;
+    text-align: center;
+}
+footer {
+    text-align: center;
+    width: 100%;
+    font-size: small;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 0;   
+}
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+nav {
+    width: 100%;
+    max-width: 100%;
+}
+ul li {
+    text-decoration: none;
+    list-style-type: none;
+    color: #ffffff;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: larger;
+}
+nav a:hover {
+    background-color: #ffffff;
+    color: #07314e;
+}
+header, body {
+    background-color: #1e4968;
+    color: #ffffff;
+}
+nav, footer {
+    background-color: #07314e;
+    color: #ffffff;
+    max-width: 100%;
+}
+img {
+    height: 250px;
+}
+
+.colors, .fonts {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5rem auto;
+    width: min(90%, 75rem);
+    max-width: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 2em;
+    font-size: larger;
+}
+.fontOne, .fontTwo {
+    background-color: #ffffff;
+    color: #07314e;
+    
+}
+.fontOne {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.fontOne p {
+    padding: 10px;
+}
+.fontTwo {
+    font-family: 'Roboto Slab', serif;
+}
+.PrimaryColor, .SecondaryColor, .TextColor, .fontOne, .fontTwo {
+    border-style:solid;
+    border-color: grey;
+    border-radius: 10px;
+    text-align: center;
+}
+.PrimaryColor {
+    background-color: #1e4968;
+}
+
+.SecondaryColor {
+    background-color: #07314e;
+
+}
+.TextColor {
+    background-color: #ffffff;
+    color: #07314e;
+}
+.TextColor ul li {
+    color: #07314e;
+}
+h1{
+    text-align: center;
+}
+
+
+/* medium screen */
+@media only screen and (min-width: 37.5em) {
+
+    nav ul { display: flex; }
+	nav ul li { flex: 1 1 100%; }
+
+    .colors, .fonts {
+        grid-template-columns: 50% 50%;
+        padding: 2em;
+    }
+}
+
+/* Large screen */
+@media only screen and (min-width: 80em) {
+
+    .colors {
+        grid-auto-flow: column;
+        grid-template-columns: 33% 33% 33%;
+    }
+}

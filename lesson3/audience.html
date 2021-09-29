@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/lesson3.css">
+    
+    <title>Crop Watch | Audience</title>
+</head>
+    <body>
+        <div id="wrapper"></div>
+            <header id="page-header">
+                <img src="#" alt="site plan logo">
+                <h1>Crop Watch</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Portal</a></li>
+                    <li><a href="index.html">Plan</a></li>
+                    <li><a href="audience.html">Audience</a></li>
+                    <li><a href="colors.html">Colors</a></li>
+                    <li><a href="typography.html">Typography</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h1>Audience</h1>
+                <section class="target">
+                    <h2>Target Audience</h2>
+                    <p>The target audience for my site are farmers</p>
+                </section>
+                <section class="personas">
+                    <h2>Personas</h2>
+                    <h3>Persona 1</h3>
+                    <p>A local farmer</p>
+                    <h3>Persona 2</h3>
+                    <p>A woman living at home with a small garden in her backyard</p>
+                </section>
+                <section class ="scenarios">
+                    <h2>Scenarios</h2>
+                    <ul>
+                        <li>
+                            checking the weather daily to know what to wear
+                        </li>
+                        <li>
+                            checking for overnight frosts to know if plants should be covered
+                        </li>
+                        <li>
+                            check for how much rain has been seen over the last few weeks and how much to expect in the coming weeks
+                        </li>
+                        <li>
+                            check for trending temperatures up or down to help predict good time frames for working
+                        </li>
+                        <li>
+                            check wind trends to predict if plants need extra stakes/support to keep them upright
+                        </li>
+                    </ul>
+                </section>
+            </main>
+            <footer>
+                <p>&copy; <span id = year></span> | Crop Watch |
+                    <a href="https://developer.mozilla.org/en-US/" style="color: #000080">MDN Documentation Site</a>
+                    | BYU-Idaho | Last Updated <span id='modified'></span></p>
+            </footer>
+
+            <script> document.getElementById('modified').innerHTML = document.lastModified;
+                let date = new Date();
+                document.getElementById('year').innerHTML = date.getUTCFullYear();
+            </script>
+        <div id="wrapper"></div>
+    </body>
+</html>

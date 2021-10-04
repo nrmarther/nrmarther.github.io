@@ -59,6 +59,10 @@ img {
     height: 250px;
 }
 
+.persona, .purpose {
+    max-width: 50%;
+}
+
 .colors, .fonts {
     margin-left: auto;
     margin-right: auto;

@@ -2,8 +2,7 @@ const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.navigation')
 
 hambutton.addEventListener('click', () => {
-    mainnav.classList.toggle('responsive')
-}, false);
+    mainnav.classList.toggle('responsive')}, false);
 
 // To solve the mid resizing issue with responsive class on
 window.onresize = () => {

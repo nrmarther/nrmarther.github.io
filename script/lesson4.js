@@ -9,3 +9,8 @@ window.onresize = () => {
     if (window.innerWidth > 760)
          mainnav.classList.remove('responsive')
 };
+
+// footer year and last updated
+document.getElementById('modified').innerHTML = document.lastModified;
+let date = new Date();
+document.getElementById('year').innerHTML = date.getUTCFullYear();

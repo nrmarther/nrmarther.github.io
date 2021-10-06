@@ -21,7 +21,7 @@ header {
     height: 40%;
     padding: 1%;
 }
-header h1, img, p {
+header h1, header img, header p {
 	display: flex;
 	align-items: center;
 	justify-items: center;
@@ -60,7 +60,6 @@ nav {
 .navigation {
 	list-style: none;
 	padding: 0;
-
 }
 .navigation li:first-child {
 	display: block;

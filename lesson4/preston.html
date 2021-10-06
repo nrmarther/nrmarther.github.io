@@ -21,44 +21,44 @@
     
     <title>Crop Watch | Preston, ID</title>
 </head>
-<div id="wrapper">
     <body>
-        <header id="page-header">
-            <img src="../media/weatherLogo.jpg" alt="Crop Watch Logo">
-            <h1>Crop Watch</h1>
-            <p>
-                <i>Helping you Watch your Crops!</i>
-            </p>
-        </header>
-        <nav>
-            <ul class="navigation">
-                <li><a class="ham" href="#" onclick="toggle()">☰ Menu</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
-                <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
-            </ul>
-        </nav>
-        <main>
-            <h2>Preston Idaho</h2>
-            <div class="content_box">Hero w/ Weather Summary</div>
-            <div class="content_box">5 Day Forecast</div>
-            <div class="content_box">Article</div>
-            <div class="content_box">Contact Information</div>
-        </main>
-        <footer>
-            <p>&copy; <span id = year></span> | Nathan Martherus |
-                <a href="https://developer.mozilla.org/en-US/">MDN Documentation Site</a>
-                 | BYU-Idaho | Last Updated <span id='modified'></span></p>
-        </footer>
+        <div id="wrapper">
+            <header id="page-header">
+                <img src="../media/weatherLogo.jpg" alt="Crop Watch Logo">
+                <h1>Crop Watch</h1>
+                <p>
+                    <i>Helping you Watch your Crops!</i>
+                </p>
+            </header>
+            <nav>
+                <ul class="navigation">
+                    <li><a class="ham" href="#" onclick="toggle()">☰ Menu</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2>Preston Idaho</h2>
+                <div class="content_box">Hero w/ Weather Summary</div>
+                <div class="content_box">5 Day Forecast</div>
+                <div class="content_box">Article</div>
+                <div class="content_box">Contact Information</div>
+            </main>
+            <footer>
+                <p>&copy; <span id = year></span> | Nathan Martherus |
+                    <a href="https://developer.mozilla.org/en-US/">MDN Documentation Site</a>
+                    | BYU-Idaho | Last Updated <span id='modified'></span></p>
+            </footer>
 
-        <script> document.getElementById('modified').innerHTML = document.lastModified;
-            let date = new Date();
-            document.getElementById('year').innerHTML = date.getUTCFullYear();
-        </script>
-
+            <script> document.getElementById('modified').innerHTML = document.lastModified;
+                let date = new Date();
+                document.getElementById('year').innerHTML = date.getUTCFullYear();
+            </script>
+        </div>
     </body>
-</div>
+
 </html>

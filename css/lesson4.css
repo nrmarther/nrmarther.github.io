@@ -63,6 +63,7 @@ nav {
 }
 .navigation li:first-child {
 	display: block;
+	text-align: right;
 }
 .navigation li {
 	display: none;

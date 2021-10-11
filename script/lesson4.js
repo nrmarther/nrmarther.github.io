@@ -9,7 +9,7 @@ window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('
 
 
 // footer year and last updated
-let d = new Date();
+let d = new Date(document.lastModified);
 document.getElementById('year').innerHTML = d.getUTCFullYear();
 
 

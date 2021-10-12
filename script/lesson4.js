@@ -28,3 +28,18 @@ let year = d.getFullYear();
 let lastUpdated = `${day}, ${d.getDate()} ${month} ${year}`;
 
 document.getElementById('modified').innerHTML = lastUpdated;
+
+
+
+function lastSave() {
+    const isoString = new Date(document.lastModified).toISOString();
+    const options = {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+        weekday: "long"
+    };
+    console.log(isoString);
+    const date = new Date(isoString);
+    const upDate = new Intl.DateTimeFormat("en-US", options)
+}

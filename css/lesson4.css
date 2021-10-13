@@ -22,6 +22,14 @@ body {
     max-width: 100%;
 	align-content: center;
 }
+
+#banner {
+	background-color: #ffff;
+	color: #07314e;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-align: center;
+}
 header {
     width: 100%;
     max-width: 100%;
@@ -84,10 +92,6 @@ nav {
 	font-weight: 700;
 	transition: 0.5s;
 }
-.navigation a:hover {
-	color: #07314e;
-	background-color:#ffff;
-}
 
 .responsive li {
 	display: block;
@@ -115,7 +119,23 @@ background-color: #07314e;
 margin-bottom: 1em;
 }
 
-/* medium screen */
+.navigation a:hover {
+	color: #07314e;
+	background-color:#ffff;
+}
+
+.navigation a[title~=Home], 
+.navigation a[title~=Preston], 
+.navigation a[title~=Soda],
+.navigation a[title~=Fish],
+.navigation a[title~=Storm],
+.navigation a[title~=Gallery] {
+	color: #07314e;
+	background-color:#ffff;
+}
+
+
+/* Large Screen */
 @media only screen and (min-width: 37.5em) {
     .navigation {
 		display: flex;

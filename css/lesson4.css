@@ -119,17 +119,13 @@ background-color: #07314e;
 margin-bottom: 1em;
 }
 
-.navigation a:hover {
+.navigation a:hover,
+.navigation a:focus {
 	color: #07314e;
 	background-color:#ffff;
 }
 
-.navigation a[title~=Home], 
-.navigation a[title~=Preston], 
-.navigation a[title~=Soda],
-.navigation a[title~=Fish],
-.navigation a[title~=Storm],
-.navigation a[title~=Gallery] {
+.navigation #Current a {
 	color: #07314e;
 	background-color:#ffff;
 }

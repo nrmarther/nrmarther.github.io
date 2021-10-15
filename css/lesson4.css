@@ -119,6 +119,20 @@ background-color: #07314e;
 margin-bottom: 1em;
 }
 
+#hero {
+	height: 50%;
+
+	display: grid;
+}
+#hero img {
+	grid-column: 1;
+	grid-row: 2;
+} 
+#hero p, #hero h3 {
+	padding-left: 1em;
+	grid-column: 2;
+}
+
 .navigation a:hover,
 .navigation a:focus {
 	color: #07314e;

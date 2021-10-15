@@ -22,7 +22,12 @@ body {
     max-width: 100%;
 	align-content: center;
 }
-
+#js {
+	text-align: center;
+	background-color: #07314e;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 #banner {
 	background-color: #ffff;
 	color: #07314e;

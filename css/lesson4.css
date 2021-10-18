@@ -64,6 +64,11 @@ main h2 {
 	text-align: center;
 	text-shadow: 2px 2px 2px #07314e;
 }
+
+#hero img {
+	width: 100%;
+}
+
 footer {
     text-align: center;
     width: 100%;
@@ -138,6 +143,10 @@ margin-bottom: 1em;
 
 /* Large Screen */
 @media only screen and (min-width: 37.5em) {
+	body {
+		max-width: 1400 px;
+	}
+
     .navigation {
 		display: flex;
 

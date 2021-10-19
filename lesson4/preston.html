@@ -50,7 +50,11 @@
                 <h2>Preston Idaho</h2>
                 <div class="content_box" id ="hero">
                     <h3>hero image / Weather Summary</h3>
-                    <img src="../media/preston_id_hero.jpg" alt="preston hero img">
+                    <picture>
+                        <source media ="(min-width: 950px)" srcset="../media/preston_id_hero.jpg">
+                        <source media ="(min-width: 480px)" srcset="../media/preston_id_hero_med.jpg">
+                        <img src="" alt="preston fields">
+                    </picture>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                        Iure error, consectetur iste molestiae illum eveniet repudiandae expedita cupiditate natus!
                        Corporis dolor est doloribus mollitia. Sed mollitia officiis quae quisquam aliquam? 

@@ -53,10 +53,10 @@ var media = window.matchMedia("(max-width: 37.4em)");
 
 function del5Day(media) {
     if (media.matches) {
-        document.getElementsByClassName("content_box")[1].style.display = "none";
+        document.getElementsByClassName("content_box")[0].style.display = "none";
     }
     else {
-        document.getElementsByClassName("content_box")[1].style.display = "block";
+        document.getElementsByClassName("content_box")[0].style.display = "block";
     }
 }
 del5Day(media);

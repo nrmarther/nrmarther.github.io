@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/lesson4.css">
+
+    <!-- primary font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <!-- secondary font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    
+    <title>Preston, ID | Crop Watch</title>
+</head>
+    <body id="Preston">
+        <div id="wrapper">
+           <noscript> 
+               <div id = "js">Javascript must be enabled to enhance this page</div>
+           </noscript>
+            <div id="banner">
+                Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+            </div>
+            <header id="page-header">
+                <img src="../media/weatherLogo.jpg" alt="Crop Watch Logo">
+                <h1>Crop Watch</h1>
+                <p>
+                    <i>Helping you Watch your Crops!</i>
+                </p>
+            </header>
+            <nav>
+                <ul class="navigation">
+                    <li><a class="ham" href="#">Menu ☰</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li id="Current"><a href="#">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2>Preston Idaho</h2>
+                <div id ="hero">
+                    <picture id = "hero_img">
+                        <source media ="screen and (min-width: 1200px)" srcset="../media/preston_id_hero_large_label.jpg">
+                        <source media ="screen and (min-width: 700px)" srcset="../media/preston_id_hero_med_label.jpg">
+                        <img src="../media/preston_id_hero_mobile_label.jpg" alt="preston fields">
+                    </picture>
+                    <div id="hero_summ">
+                        <!-- <h3>Weather Summary</h3> -->
+                        <ul id = "weather_summ">
+                            <li>Weather Summary</li>
+                            <li>Currently: <span id = "climate">Rainy</span></li>
+                            <li>High: <span id="curTemp">54</span>ºF</li>
+                            <li>Windchill: <span id = "windchill"></span></li>
+                            <li>Humidity: <span id = "humidity">95</span>%</li>
+                            <li>Wind Speed: <span id = "curSpeed">12</span>MPH</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content_box">
+                    <h3>5 Day Forecast</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                       Natus saepe vel libero illum. Nulla, impedit neque veritatis doloribus cum
+                       beatae fuga est accusantium eligendi optio, nesciunt rerum, a omnis ipsa.</p>
+                </div>
+                <div class="content_box">Article</div>
+                <div class="content_box">Contact Information</div>
+            </main>
+            <footer>
+                <p>&copy; <span id = year></span> | Crop Watch |
+                    <a href="https://developer.mozilla.org/en-US/">MDN Documentation Site</a>
+                    | BYU-Idaho | Last Updated: <span id='modified'></span></p>
+            </footer>
+        </div>
+        <script src="../script/lesson4.js"></script>
+    </body>
+</html>

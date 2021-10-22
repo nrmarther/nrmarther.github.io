@@ -1,0 +1,230 @@
+/* 1. Imports
+2.  Mobile and General
+2a. General
+2b. Mobile
+3.  Midsize
+4.  Large
+5.  Really Large
+ */
+
+ /* 1. Imports */
+ 
+ 
+ /* 2a. General */
+ body {
+    height: 100%;
+    min-height: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ header {
+    background-color: #abb7ab;
+    width: 100%;
+    height: 40%;
+    padding: 1%;
+    text-align: center;
+}
+header a {
+    text-decoration: none;
+    color: #435860;
+    font-family: 'Merriweather', serif;
+    /* font-weight: bold;
+    font-size:xx-large; */
+}
+.page_title {
+    text-align: center;
+}
+.selfportrait {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+    h1,h2 {
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+        font-size:xx-large;
+    }
+    h1 {
+        color: #435860;
+    }
+    h2{
+        color: #607B8B;
+    }
+    img {
+        max-width: 100%;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px grey;
+    }
+
+.assignmentPortal {
+    border-bottom: double grey;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lessonLinks {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    width: 100%;
+    min-height: 60%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+    ul li {
+        list-style-type: none; 
+    }
+
+    header
+
+    .columns {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .principle1, .principle2, .principle3 {
+        border-style:solid;
+        border-color: grey;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .exampleName1, .exampleName2, .exampleName3 {
+        padding-bottom: 1em;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 500;
+        font-size: larger;
+        text-align: center;
+    }
+
+    .description1, .description2, .description3 {
+        padding-top: 2em;
+        padding-right: 1em;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+        text-align: center;
+    }   
+    .exampleImg {
+        width: 250px;
+        height: 541px;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    
+    
+footer {
+    background-color: #abb7ab;
+    text-align: center;
+    width: 100%;
+    font-size: small;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 0;
+    
+}
+
+
+ /* 2b. Mobile */
+    .columns{ 
+        margin: 5rem auto;
+        width: min(90%, 75rem);
+        display: grid;
+        grid-auto-flow: row;
+        gap: 2em;
+    }
+ 
+
+ /* 3. Midsize */
+ @media (min-width: 32.5em){
+
+/* --------------------------------------------------------- Index Page ----------------------------------------------------- */
+   
+    .selfportrait{
+        float: right;
+        position: relative;
+        right: 50px;
+    }
+
+/* -------------------------------------------------- design principles page -------------------------------------------------*/
+    
+    .columns{
+        grid-template-columns: 50% 50%;
+        padding: 2em;
+    }
+    
+    .name_title, .assignmentPortal {
+        text-align: left;
+        padding: 1em;
+    }
+    
+    .principle2, .principle3 {
+        background-color: #435860;
+    }
+    .exampleName2, .exampleName3, .PrincipleName2, .PrincipleName3, .description2, .description3 {
+        color: white;
+    }
+    .principle1, .PrincipleName1, .exampleName1, .description1 {
+        background-color: white;
+        color: #435860;
+    }
+
+    .principle2 a, .principle3 a{
+        color: white;
+    }
+
+    .principle1 a {
+        color: #435860;
+    }
+
+}
+
+
+/* 4. Large */
+@media (min-width: 80em){
+
+/* --------------------------------------------------------- Index Page ----------------------------------------------------- */
+
+    header {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .selfportrait {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* -------------------------------------------------- design principles page -------------------------------------------------*/
+
+    .columns{
+        grid-auto-flow: column;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .principle1, .principle3 {
+        background-color: #435860;
+    }
+
+    .exampleName1, .exampleName3, .PrincipleName1, .PrincipleName3, .description1, .description3 {
+        background-color: #435860;
+        color: white;
+    }
+    .principle2, .PrincipleName2, .exampleName2, .description2 {
+        background-color: white;
+        color: #435860;
+    }
+    .principle1 a, .principle3 a{
+        color: white;
+    }
+
+    .principle2 a {
+        color: #435860;
+    }
+    
+}
+
+/* 5. Really Large */

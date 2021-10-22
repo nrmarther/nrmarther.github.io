@@ -83,8 +83,8 @@ banner();
 
 
 // -------------------- Calculate the Windchill -------------------------------
-let temp = document.querySelector('curTemp');
-let speed = document.querySelector('curSpeed');
+let temp = document.querySelector('#curTemp').innerText;
+let speed = document.querySelector('#curSpeed').innerText;
 
 buildWC(speed, temp);
 
@@ -98,9 +98,9 @@ function buildWC(speed, temp) {
     // Round the answer down to integer
     wc = Math.floor(wc);
     console.log('windchill 02: ' + wc);
-   
+   console.log(temp);
     // If chill is greater than temp, return the temp
-    // wc = (wc > temp)?temp:wc;
+    wc = (wc > temp) ? temp : wc;
     console.log('windchill 03: ' + wc);
    
     // Display the windchill

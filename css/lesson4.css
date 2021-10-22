@@ -141,7 +141,6 @@ nav {
 #hero img {
 	width: 100%;
 	position: relative;
-
 }
 #hero_img {
 	position: relative;
@@ -183,6 +182,7 @@ margin: 20px;
 margin-bottom: 0;
 padding: 20px;
 border-style:groove;
+border-radius: 8px;
 background-color: #07314e;
 margin-bottom: 1em;
 }

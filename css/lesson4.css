@@ -23,6 +23,7 @@ body {
     max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
 }
 header, body {
     background-color: #1e4968;

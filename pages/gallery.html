@@ -42,6 +42,48 @@
         </nav>
         <main>
             <h2>Image Gallery</h2>
+            <p>- dont need to load the full version right upon page load. instead load small image that gives blur effect.</p>
+            <p>- use class for css selector</p>
+            <p>- observer.unobserve(image);</p>
+            <p>- image.src = img.src.replace('&w=10&' '&w=800&'); instead of having data-src var in js</p>
+            <ul class="weatherimgs">
+                <li class="weatherimg">
+                    <img src="../media/thunderstormimg.jpg" data-src="#" alt="thunderstorm">
+                    <p>this image would be used for thunderstorms</p>
+                </li>
+                <li class="weatherimg">
+                    <img src="../media/lightrainimg.jpg" data-src="#" alt="light rain">
+                    <p>this image would be used for light rain, not heavy rain</p>
+                </li>
+                <li class="weatherimg">
+                    <img src="../media/heavyrainimg.jpg" data-src="#" alt="heavy rain">
+                    <p>this image would be used during heavy rain, not light rain</p>
+                </li>
+                <li class="weatherimg">
+                    <img src="../media/snowfallimg.jpg" data-src="#" alt="snow">
+                    <p>this image would be used when there is snowfall</p>
+                </li>
+                <li class="weatherimg">
+                    <img src="../media/cloudyimg.jpg" data-src="#" alt="cloudy">
+                    <p>this image would be used when it is overcast</p>
+                </li>
+                <li class="weatherimg">
+                    <img src="../media/partlycloudyimg.jpg" data-src="#" alt="partly cloudy">
+                    <p>this image would be used when it is partly cloudy</p>
+                </li>
+                <li class="weatherimg">
+                    <img src="../media/hailimg.jpg" data-src="#" alt="hail">
+                    <p>this image would be used when there is hail</p>
+                </li>
+                <li class="weatherimg">
+                    <img src="../media/sunny.jpg" data-src="#" alt="Sunny">
+                    <p>this image would be used during the day when there are little to no clouds and the sun is shining</p>
+                </li>
+                <li class="weatherimg">
+                    <img src="../media/windyimg.jpg" data-src="#" alt="windy">
+                    <p>this image would be used when it is particularly windy</p>
+                </li>
+            </ul>
 
         </main>
         <footer>

@@ -28,7 +28,6 @@ header, body {
 nav, footer {
     background-color: #07314e;
     color: #ffff;
-    max-width: 100%;
 }
 /* ----------------------------- banners and alerts ---------------------------- */
 #js {
@@ -81,7 +80,6 @@ main h2 {
 /* --------------------------------- footer ------------------------------------ */
 footer {
     text-align: center;
-    width: 100%;
     font-size: small;
     padding: 1%;
     margin-left: auto;
@@ -133,17 +131,36 @@ nav {
 }
 
 /* ------------------------------- page content ------------------------------- */
+.weatherimgs{
+	margin-left: auto;
+	margin-right: auto;
+}
+.weatherimg {
+	list-style: none;
+	box-shadow: 2px 2px 2px #031f33;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 2px;
+	margin-bottom: 15px;
+	background-color: #07314e;
 
-  
+}
+.weatherimgs p {
+	padding: 3px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+.weatherimgs img {
+	max-width: 100%;
+	max-height: 100%;
+	border-bottom: solid;
+	border-width: 2px;
+}
 
 
-/* Large Screen */
-@media only screen and (min-width: 37.5em) {
-	body {
-		max-width: 1400px;
-	}
-
-/* ------------------------------- navigation bar ------------------------------ */
+/* MEDIUM SCREEN */
+@media only screen and (min-width:700px) {
+	/* ------------------------------- navigation bar ------------------------------ */
     .navigation {
 		display: flex;
 
@@ -158,6 +175,29 @@ nav {
 	}
 	.navigation li:first-child {
 		display: none;
+	}
+/* ------------------------------- page content ------------------------------- */
+	.weatherimgs {
+		display: grid;
+		grid-template-columns: 45% 45%;
+		gap: 1em;
+	}
+}
+
+/* LARGE SCREEN */
+@media only screen and (min-width: 1200px) {
+	body {
+		max-width: 1400px;
+	}
+	/* ------------------------------- page content ------------------------------- */
+
+	.weatherimg:hover {
+		box-shadow: 8px 8px 8px #031f33;
+	}
+	.weatherimgs {
+		display: grid;
+		grid-template-columns: 30% 30% 30%;
+		gap: 1em;
 	}
 
 }

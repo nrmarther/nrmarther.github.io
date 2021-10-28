@@ -134,6 +134,16 @@ nav {
 
 /* ------------------------------- page content ------------------------------- */
 
+.content_box{
+	margin: 20px;
+	margin-bottom: 0;
+	padding: 20px;
+	border-style:groove;
+	border-radius: 8px;
+	background-color: #07314e;
+	margin-bottom: 1em;
+	}
+
   /*-------------------- hero image and weather summary -------------------*/
 #hero img {
 	width: 100%;
@@ -146,7 +156,7 @@ nav {
 #weather_summ {
 	z-index: 10;
 	position: absolute;
-	top: 280px;
+	bottom: 850px;
 	left: 45px;
 	background-color: rgb(255,255,255, 0.6);
 	color: #07314e;
@@ -173,25 +183,24 @@ nav {
 
 }
 
+/*--------------------------------- article box ---------------------------------*/
 
-.content_box{
-margin: 20px;
-margin-bottom: 0;
-padding: 20px;
-border-style:groove;
-border-radius: 8px;
-background-color: #07314e;
-margin-bottom: 1em;
+#article img {
+	float: right;
+	margin: 8px;
+	width: 150px;
+	height: 150px;
 }
 
+#article p {
+	text-align: justify;
 
-/* Large Screen */
-@media only screen and (min-width: 37.5em) {
-	body {
-		max-width: 1400px;
-	}
+}
 
-/* ------------------------------- navigation bar ------------------------------ */
+/* medium screen */
+@media only screen and (min-width:625px) {
+
+	/* ------------------------------- navigation bar ------------------------------ */
     .navigation {
 		display: flex;
 
@@ -206,6 +215,26 @@ margin-bottom: 1em;
 	}
 	.navigation li:first-child {
 		display: none;
+	}
+	/* -------------------------------- page conent ------------------------------- */
+
+	#weather_summ {
+		bottom: 800px;
+	}
+
+}
+
+/* Large Screen */
+@media only screen and (min-width: 1200px) {
+	body {
+		max-width: 1400px;
+	}
+
+
+/* -------------------------------- page conent ------------------------------- */
+
+	#weather_summ {
+		bottom: 650px;
 	}
 
 }

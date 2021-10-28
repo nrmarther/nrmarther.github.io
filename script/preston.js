@@ -71,8 +71,6 @@ function banner() {
     if (day == 5) {
         //displays the pancake banner on friday
         document.getElementById("banner").style.display = "block";
-        //lowers the weather summary to account for the banner
-        document.getElementById("weather_summ").style.top = "310px";
     }
     else {
         //hides pancake banner on all other days

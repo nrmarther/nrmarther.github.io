@@ -134,6 +134,7 @@ nav {
 .weatherimgs{
 	margin-left: auto;
 	margin-right: auto;
+	
 }
 .weatherimg {
 	list-style: none;
@@ -143,6 +144,7 @@ nav {
 	border-width: 2px;
 	margin-bottom: 15px;
 	background-color: #07314e;
+	max-width: 525px;
 
 }
 .weatherimgs p {
@@ -159,7 +161,7 @@ nav {
 
 
 /* MEDIUM SCREEN */
-@media only screen and (min-width:700px) {
+@media only screen and (min-width:625px) {
 	/* ------------------------------- navigation bar ------------------------------ */
     .navigation {
 		display: flex;

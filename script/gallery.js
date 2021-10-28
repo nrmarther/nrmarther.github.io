@@ -50,7 +50,7 @@ function lastSave() {
 let imagesToLoad = document.querySelectorAll("img[data-src]");
 
 const imgOptions = {
-  threshold: 0.05
+  threshold: 0.1
 }
 const loadImages = (image) => {
   image.setAttribute('src', image.getAttribute("data-src"));

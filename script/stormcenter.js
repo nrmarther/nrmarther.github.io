@@ -10,15 +10,6 @@ hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive'
 // To solve the mid resizing issue with responsive class on
 window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
 
-//displays input for severity slider
-function adjustRating(rating) {
-    document.getElementById("ratingvalue").innerHTML = rating;
-}
-
-//return to storm center page from thank you page
-document.getElementsByClassName("return")[0].onclick = function () {
-    location.href = "stormcenter.html";
-};
 
 // footer year and last updated
 let d = new Date(document.lastModified);
@@ -41,17 +32,12 @@ let lastUpdated = `${day}, ${d.getDate()} ${month} ${year}`;
 
 document.getElementById('modified').innerHTML = lastUpdated;
 
+//displays input for severity slider
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
 
-
-function lastSave() {
-    const isoString = new Date(document.lastModified).toISOString();
-    const options = {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-        weekday: "long"
-    };
-    console.log(isoString);
-    const date = new Date(isoString);
-    const upDate = new Intl.DateTimeFormat("en-US", options)
+//return to storm center page from thank you page
+document.getElementsByClassName("return")[0].onclick = function () {
+    location.href = "stormcenter.html";
 };

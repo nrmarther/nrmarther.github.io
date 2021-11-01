@@ -10,6 +10,16 @@ hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive'
 // To solve the mid resizing issue with responsive class on
 window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
 
+//displays input for severity slider
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
+
+//return to storm center page from thank you page
+document.getElementsByClassName("return")[0].onclick = function () {
+    location.href = "stormcenter.html";
+};
+
 // footer year and last updated
 let d = new Date(document.lastModified);
 document.getElementById('year').innerHTML = d.getUTCFullYear();

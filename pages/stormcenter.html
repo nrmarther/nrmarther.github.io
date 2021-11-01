@@ -45,7 +45,7 @@
             <form method="get" action="thanks.html">
                 <fieldset>
                     <h3>Reporter Information</h3>
-                    <label class="top">Full Name* <input type="text" name="name" pattern="firstname lastname" required></label>
+                    <label class="top">Full Name* <input type="text" name="name" pattern="[A-Za-z]{5-100}" required></label>
                     <label class="top">Email <input type="email" name="email" placeholder="example@domain.com"></label>
                     <label class="top">Phone* <input type="tel" name="phone" placeholder="1234445555" required></label>
                     <label class="top">Zip Code*<input type="number" name="zip" placeholder="83440" required></label>
@@ -64,7 +64,10 @@
                     <label class="sbs"><input type="radio" name = "Storm Type" value="Tornado">Tornado</label>
 
                     <label for="sev">Storm Severity (between 0 and 10): 
-                    <input type="range" id="sev" name="severity" min="0" max="10">
+                    <input type="range" id="sev" name="severity" value="5" min="0" max="10" step="1" 
+                     list="tickmarks"oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+                </label>
                     </label>
 
                     <label class="top">Storm Region 

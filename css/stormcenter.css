@@ -176,7 +176,7 @@ form label.sbs {
 	color: #555;
 }
 
-form input.submitBtn {
+form input.submitBtn, #thanks input.return {
 	border: none;
 	background-color: #9c2c13;
 	color: white;
@@ -194,6 +194,18 @@ form label.top input:required {
 form label.top input:required:valid {
 	border-left: green solid 6px;
 }
+
+#thanks {
+	background-color: #fff;
+	color: #1e4968;
+	text-shadow: none;
+	padding: 1rem;
+	border-radius: 8px;
+}
+#thanks h2 {
+	text-align: center;
+	text-shadow: none;
+}
   
 
 
@@ -201,6 +213,9 @@ form label.top input:required:valid {
 @media only screen and (min-width: 37.5em) {
 	body {
 		max-width: 1400px;
+	}
+	form label.sbs {
+		padding: .4rem 0;
 	}
 
 /* ------------------------------- navigation bar ------------------------------ */

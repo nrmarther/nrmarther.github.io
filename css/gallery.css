@@ -134,7 +134,7 @@ nav {
 .weatherimgs{
 	margin-left: auto;
 	margin-right: auto;
-	
+	grid-template-columns: 33% 33% 33%;
 }
 .weatherimg {
 	list-style: none;
@@ -181,7 +181,7 @@ nav {
 /* ------------------------------- page content ------------------------------- */
 	.weatherimgs {
 		display: grid;
-		grid-template-columns: 45% 45%;
+		grid-template-columns: 50% 50%;
 		gap: 1em;
 	}
 }

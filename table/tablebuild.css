@@ -1,0 +1,31 @@
+table thead tr td, table tfoot tr td {
+    background-color: #7fb9c2;
+    color: black;
+    text-align: center;
+
+}
+
+table {
+    border-style: solid;
+    box-shadow: 4px 4px 4px #628ca6;
+    border-collapse: collapse;
+}
+
+table thead tr td {
+    font-size: x-large;
+}
+table tfoot tr td {
+    font-size: small;
+}
+
+td, tr {
+    border: solid;
+    border-width: 1px 0;
+}
+
+tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+tr {
+    background-color: #e7ffed;
+}

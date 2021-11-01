@@ -42,6 +42,56 @@
         </nav>
         <main>
             <h2>Storm Center</h2>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <h3>Reporter Information</h3>
+                    <label class="top">Full Name* <input type="text" name="name" pattern="firstname lastname" required></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="example@domain.com"></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="1234445555" required></label>
+                    <label class="top">Zip Code*<input type="number" name="zip" placeholder="83440" required></label>
+                    <label class="top">Date Reported<input type="date" name="reportedDate"></label>
+                </fieldset>
+    
+                <fieldset>
+                    <h3>Storm Information</h3>
+                    <label class="top">Storm Date<input type="date" name="stormDate"></label>
+
+                    <div>Storm Type</div>
+                    <label class="sbs"><input type="radio" name = "Storm Type" value="Flash Flood">Flash Flood</label>
+                    <label class="sbs"><input type="radio" name = "Storm Type" value="Hail">Hail</label>
+                    <label class="sbs"><input type="radio" name = "Storm Type" value="Hurricane">Hurricane</label>
+                    <label class="sbs"><input type="radio" name = "Storm Type" value="Thunder Storm">Thunder Storm</label>
+                    <label class="sbs"><input type="radio" name = "Storm Type" value="Tornado">Tornado</label>
+
+                    <label for="sev">Storm Severity (between 0 and 10): 
+                    <input type="range" id="sev" name="severity" min="0" max="10">
+                    </label>
+
+                    <label class="top">Storm Region 
+                        <Select name ="region">
+                            <option value="">Please Select &#9662</option>
+                            <option value="region">Fish Haven</option>
+                            <option value="region">Preston</option>
+                            <option value="region">Soda Springs</option>
+                        </Select>
+                    </label>
+                    
+                    <div>Are You in Danger?</div>
+                    <label class="sbs"><input type="radio" name = "danger" value="Yes">Yes</label>
+                    <label class="sbs"><input type="radio" name = "danger" value="Maybe">Maybe</label>
+                    <label class="sbs"><input type="radio" name = "danger" value="No">No</label>
+                </fieldset>
+    
+                <fieldset>
+                    <h3>Other Information</h3>
+                    <label class="top"> Additional Information 
+                        <textarea rows="4" cols="50" name="info" placeholder="Additional comments go here..."></textarea>
+                    </label>
+                </fieldset>
+    
+                <input type="submit" value="Report Storm" class="submitBtn">
+    
+            </form> 
 
         </main>
         <footer>

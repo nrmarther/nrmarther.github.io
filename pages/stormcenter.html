@@ -45,7 +45,7 @@
             <form method="get" action="thanks.html">
                 <fieldset>
                     <h3>Reporter Information</h3>
-                    <label class="top">Full Name* <input type="text" name="name" pattern="[A-Za-z]{5-100}" required></label>
+                    <label class="top">Full Name* <input type="text" name="name" pattern="[A-Za-z]{5,}" required></label>
                     <label class="top">Email <input type="email" name="email" placeholder="example@domain.com"></label>
                     <label class="top">Phone* <input type="tel" name="phone" placeholder="1234445555" required></label>
                     <label class="top">Zip Code*<input type="number" name="zip" placeholder="83440" required></label>
@@ -56,17 +56,27 @@
                     <h3>Storm Information</h3>
                     <label class="top">Storm Date<input type="date" name="stormDate"></label>
 
-                    <div>Storm Type</div>
-                    <label class="sbs"><input type="radio" name = "Storm Type" value="Flash Flood">Flash Flood</label>
-                    <label class="sbs"><input type="radio" name = "Storm Type" value="Hail">Hail</label>
-                    <label class="sbs"><input type="radio" name = "Storm Type" value="Hurricane">Hurricane</label>
-                    <label class="sbs"><input type="radio" name = "Storm Type" value="Thunder Storm">Thunder Storm</label>
-                    <label class="sbs"><input type="radio" name = "Storm Type" value="Tornado">Tornado</label>
+                    
+                    <label class="top" for="storm">Storm Type:
+                        <input list="stormType" name="storm" id="storm">
+                        <datalist id="stormType">
+                            <option value="Flash Flood"> Flash Flood</option>
+                            <option value="Hail"> Hail</option>
+                            <option value="Hurricane"> Hurricane</option>
+                            <option value="Thunderstorm"> Thunderstorm</option>
+                            <option value="Tornado"> Tornado</option>
+                        </datalist>
+                    </label>
 
-                    <label for="sev">Storm Severity (between 0 and 10): 
-                        <input type="range" id="sev" name="severity" value="5" min="0" max="10" step="1" 
-                        list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        <span id="ratingvalue">5</span>
+
+
+                    <label class="top" for="sev">
+                        Storm Severity (between 0 and 10): 
+                        <div id="retval">
+                            <input type="range" id="sev" name="severity" value="5" min="0" max="10" step="1" 
+                            list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="ratingvalue">5</span>
+                            </div>
                     </label>
 
                     <label class="top">Storm Region 

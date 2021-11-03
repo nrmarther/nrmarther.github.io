@@ -7,8 +7,10 @@ table thead tr td, table tfoot tr td {
 
 table {
     border-style: solid;
+    border-width: 1px;
     box-shadow: 4px 4px 4px #628ca6;
-    border-collapse: collapse;
+    border-spacing: 1px;
+    background-color: grey;
 }
 
 table thead tr td {
@@ -18,14 +20,22 @@ table tfoot tr td {
     font-size: small;
 }
 
-td, tr {
-    border: solid;
-    border-width: 1px 0;
-}
-
 tr:nth-child(even) {
     background-color: #e7f0ed;
 }
 tr {
     background-color: #e7ffed;
+}
+
+.blue {
+    background-color: #628ca6;
+    color: white;
+}
+
+table tr td {
+    text-align: center;
+}
+
+table tr td, table tr th {
+    padding: 5px;
 }

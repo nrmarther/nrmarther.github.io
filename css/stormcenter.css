@@ -178,6 +178,7 @@ form label.top textarea
 }
 #retval {
 	display:flex;
+	align-items: center;
 }
 
 form label.sbs {

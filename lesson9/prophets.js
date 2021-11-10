@@ -21,10 +21,7 @@ for (let i = 0; i < prophets.length; i++ ) {
     let h2 = document.createElement('h2');
 
     h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-
     card.appendChild(h2);
-
     document.querySelector('div.cards').appendChild(card);
-
     image.setAttribute('src', prophets[i].imageurl);
 }

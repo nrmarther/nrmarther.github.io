@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/stormcenter.css">
+    <link rel="stylesheet" href="../css/home.css">
 
     <!-- primary font -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -18,9 +18,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     
-    <title>Thank You | Crop Watch</title>
+    <title>Home Page | Crop Watch</title>
 </head>
-<body id = "stormCenter">
+<body id = "home">
     <div id="wrapper">
         <header id="page-header">
             <img src="../media/weatherLogo.jpg" alt="Crop Watch Logo">
@@ -32,7 +32,7 @@
         <nav>
             <ul class="navigation">
                 <li><a class="ham" href="#">Menu ☰</a></li>
-                <li><a href="index.html">Home</a></li>
+                <li id="Current"><a href="index.html">Home</a></li>
                 <li><a href="preston.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
@@ -40,20 +40,45 @@
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
-        <main id="thanks">
-            <h2>Thank You!</h2>
-            <p>We appreciate the time you took to fill out this form notifying us of the storm.
-                 We may be in contact with you soon to gather more information. Stay Safe!</p>
+        <main>
 
-            <input type="button" class="return" value="Return to Storm Center" onclick="stormcenter.html">
+            <section id = "Preston">
+                <h2>Preston</h2>
+                <ul class="info">
+                    <li class="founded">Year Founded: <span></span></li>
+                    <li class="pop">Population: <span></span></li>
+                    <li class="rain">Annual Rain Fall: <span></span></li>
+                </ul>
+                <img src="" alt="">
+            </section>
+            <section id = "Fish Haven">
+                <h2>Fish Haven</h2>
+                <ul class="info">
+                    <li class="founded">Year Founded: <span></span></li>
+                    <li class="pop">Population: <span></span></li>
+                    <li class="rain">Annual Rain Fall: <span></span></li>
+                </ul>
+                <img src="" alt="">
+            </section>
+            <section id = "Soda Springs">
+                <h2>Soda Springs</h2>
+                <ul class="info">
+                    <li class="founded">Year Founded: <span></span></li>
+                    <li class="pop">Population: <span></span></li>
+                    <li class="rain">Annual Rain Fall: <span></span></li>
+                </ul>
+                <img src="" alt="">
+            </section>
 
+            
+           
         </main>
         <footer>
             <p>&copy; <span id = year></span> | Crop Watch |
                 <a href="https://developer.mozilla.org/en-US/">MDN Documentation Site</a>
                 | BYU-Idaho | Last Updated: <span id='modified'></span></p>
         </footer>
-        <script src="../script/stormcenter.js"></script>
+        <script src="../script/home.js"></script>
     </div>
 </body>
 </html>

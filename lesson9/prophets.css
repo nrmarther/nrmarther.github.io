@@ -18,6 +18,6 @@ section {
 
 section img {
     border-radius: 10px;
-    box-shadow: 5px 5px 5px;
+    max-width: 95%;
 }
 

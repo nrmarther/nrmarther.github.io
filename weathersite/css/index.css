@@ -127,30 +127,36 @@ nav {
 	color: #07314e;
 	background-color:#ffff;
 }
+
 /* ------------------------------- page content ----------------------------- */
-section li {
-	list-style: none;
-}
+
 section {
-	background-color: #07314e;
-	align-content: center;
-	border-radius: 8px;
+  	margin: .5rem auto;
+  	background-color: #1e4968;
 }
-section h2,
-section p {
-	padding-left: 15px;
-	padding-top: 15px;
-	margin-bottom: .75em;
-}
-.townImg {
-	max-width: 250px;
-	max-height: 250px;
-}
-.data {
-	max-width: 300px;
+
+article {
+	background-color:#07314e;;
+	color:#fff;
+	margin-bottom: 25px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	text-align: center;
+	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
-	align-content: center;
+}
+
+img {
+	max-width: 100%;
+	border-radius: 8px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+ul li {
+	padding: .75rem;
+	list-style: none;
 }
 
 /* medium screen */
@@ -163,7 +169,6 @@ section p {
 	.navigation li {
 		display: block; 
 		flex: 1 1 auto;
-
 	}
 	.navigation a {
 		text-align: center;
@@ -173,34 +178,37 @@ section p {
 	}
 	
 		/* ------------------------------- page content ----------------------------- */
-	main {
+
+		article {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			max-width: 44em;
+		}
+		article:nth-child(odd) img {
+			grid-column: 2;
+		}
+		
+		article:nth-child(odd) .data {
+			grid-column: 1;
+			grid-row: 1;
+		}
+
+		img {
+			max-width: 100%;
+
+		}
+}
+
+/* large screen */
+@media only screen and (min-width:900px) {
+	section {
 		display: grid;
+		grid-template-columns: 33% 33% 33%;
 	}
-	#Preston .info, #Preston h2 {
-		grid-column: 1;
-		grid-row: 1;
+	article {
+		display:block;
 	}
-	#Preston .townImg {
-		grid-column: 2;
-		grid-row: 1;
+	img {
+		max-width: 100%;
 	}
-
-	#FishHaven .info, #FishHaven h2 {
-		grid-column: 2;
-		grid-row: 2;
-	}
-	#FishHaven .townImg {
-		grid-column: 1;
-		grid-row: 2;
-	}
-
-	#SodaSprings .info, #SodaSprings h2 {
-		grid-column: 1;
-		grid-row: 3;
-	}
-	#SodaSprings .townImg {
-		grid-column: 2;
-		grid-row: 3;
-	}
-
 }

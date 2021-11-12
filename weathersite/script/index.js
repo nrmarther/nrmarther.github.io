@@ -3,12 +3,12 @@
 const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.navigation')
 
-hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+hambutton.addEventListener('click', () => { mainnav.classList.toggle('responsive') }, false);
 
 
 
 // To solve the mid resizing issue with responsive class on
-window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
+window.onresize = () => { if (window.innerWidth > 760) mainnav.classList.remove('responsive') };
 
 // footer year and last updated
 let d = new Date(document.lastModified);
@@ -16,11 +16,11 @@ document.getElementById('year').innerHTML = d.getUTCFullYear();
 
 
 let months = ["January", "February", "March", "April", "May",
-              "June", "July", "August", "September", "October",
-              "November", "December"];
+    "June", "July", "August", "September", "October",
+    "November", "December"];
 
-let days = ["Sunday", "Monday", "Tuesday", "Wednesday", 
-            "Thursday", "Friday", "Saturday"];
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday",
+    "Thursday", "Friday", "Saturday"];
 
 
 day = days[d.getDay()];
@@ -45,3 +45,41 @@ function lastSave() {
     const date = new Date(isoString);
     const upDate = new Intl.DateTimeFormat("en-US", options)
 };
+
+//request json for town info
+const requestURL = 'towndata.json';
+
+fetch(requestURL)
+    .then(function (response) {
+        if (response.ok) {
+            return response.json();
+        }
+        throw new ERROR('Network response was not ok');
+    })
+    .then(function (jsonObject) {
+        console.table(jsonObject);  // temporary checking for valid response and data parsing
+        const towns = jsonObject['towns'];
+
+        for (let i = 0; i < towns.length; i++) {
+            var name = towns[i].name.STRINGIFY()
+            if (name == "Preston") {
+                document.getElementById('p_year').innerHTML = towns[i].yearFounded;
+                document.getElementById('p_pop').innerHTML  = towns[i].currentPopulation;
+                document.getElementById('p_rain').innerHTML = towns[i].averageRainfall;
+            }
+            else if (towns[i].name == "Fish Haven") {
+                document.getElementById('f_year').innerHTML = towns[i].yearFounded;
+                document.getElementById('f_pop').innerHTML  = towns[i].currentPopulation;
+                document.getElementById('f_rain').innerHTML = towns[i].averageRainfall;
+            }
+            else if (towns[i].name == "Soda Springs") {
+                document.getElementById('s_year').innerHTML = towns[i].yearFounded;
+                document.getElementById('s_pop').innerHTML  = towns[i].currentPopulation;
+                document.getElementById('s_rain').innerHTML = towns[i].averageRainfall;
+            }
+        }
+    })
+    .catch(function (error) {
+        console.log('Fetch error: ', error.message);
+    })
+

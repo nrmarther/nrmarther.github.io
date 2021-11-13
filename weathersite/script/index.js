@@ -17,10 +17,12 @@ document.getElementById('year').innerHTML = d.getUTCFullYear();
 
 let months = ["January", "February", "March", "April", "May",
     "June", "July", "August", "September", "October",
-    "November", "December"];
+    "November", "December"
+];
 
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday",
-    "Thursday", "Friday", "Saturday"];
+    "Thursday", "Friday", "Saturday"
+];
 
 
 day = days[d.getDay()];
@@ -47,39 +49,63 @@ function lastSave() {
 };
 
 //request json for town info
-const requestURL = 'towndata.json';
+const requestURL = '../script/towndata.json';
 
 fetch(requestURL)
-    .then(function (response) {
+    .then(function(response) {
         if (response.ok) {
             return response.json();
         }
         throw new ERROR('Network response was not ok');
     })
-    .then(function (jsonObject) {
-        console.table(jsonObject);  // temporary checking for valid response and data parsing
+    .then(function(jsonObject) {
+        console.table(jsonObject); // temporary checking for valid response and data parsing
         const towns = jsonObject['towns'];
 
+
         for (let i = 0; i < towns.length; i++) {
-            var name = towns[i].name.STRINGIFY()
-            if (name == "Preston") {
-                document.getElementById('p_year').innerHTML = towns[i].yearFounded;
-                document.getElementById('p_pop').innerHTML  = towns[i].currentPopulation;
-                document.getElementById('p_rain').innerHTML = towns[i].averageRainfall;
+            let name = towns[i].name;
+            name = String(name);
+            //check for any of the relevant cities
+            if (name == 'Preston' ||
+                name == 'Fish Haven' ||
+                name == 'Soda Springs') {
+                //create section element with class of 'card'
+                let card = document.createElement('section');
+                card.classList.add('card');
+                //create div element with class of 'data'
+                let data = document.createElement('div');
+                data.classList.add('data');
+                //create different elements
+                let h2 = document.createElement('h2');
+                let cp = document.createElement('p');
+                let ar = document.createElement('p');
+                let index = document.createElement('p');
+                let image = document.createElement('img');
+
+                // add appropriate content to elements
+                h2.textContent = towns[i].name;
+                index.textContent = towns[i].motto;
+                cp.textContent = 'Current Population: ' + towns[i].currentPopulation;
+                ar.textContent = 'Average Rain Fall: ' + towns[i].averageRainfall;
+                image.setAttribute('src', towns[i].photo);
+                image.setAttribute('alt', towns[i].name + ' photo');
+
+                //add elements to have correct children
+                card.appendChild(data)
+                data.appendChild(h2);
+                data.appendChild(index);
+                data.appendChild(cp);
+                data.appendChild(ar);
+                card.appendChild(image);
+
+                document.querySelector('.cards').appendChild(card);
             }
-            else if (towns[i].name == "Fish Haven") {
-                document.getElementById('f_year').innerHTML = towns[i].yearFounded;
-                document.getElementById('f_pop').innerHTML  = towns[i].currentPopulation;
-                document.getElementById('f_rain').innerHTML = towns[i].averageRainfall;
-            }
-            else if (towns[i].name == "Soda Springs") {
-                document.getElementById('s_year').innerHTML = towns[i].yearFounded;
-                document.getElementById('s_pop').innerHTML  = towns[i].currentPopulation;
-                document.getElementById('s_rain').innerHTML = towns[i].averageRainfall;
-            }
+
+
         }
+
     })
-    .catch(function (error) {
+    .catch(function(error) {
         console.log('Fetch error: ', error.message);
     })
-

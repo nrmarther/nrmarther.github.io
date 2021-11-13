@@ -25,7 +25,7 @@ fetch(requestURL)
         image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname);
 
         card.appendChild(h2);
-        card.appendChild(bd);
+        card.appendChild(bp);
         card.appendChild(bp);
         card.appendChild(image);
 

@@ -1,214 +1,260 @@
 /* ----index----- */
+
+
 /* 1. imports */
+
+
 /* 2. general */
+
+
 /* 3. mobile */
+
+
 /* 4. medium */
+
+
 /* 5. large */
 
+
 /* 1. imports */
 
+
 /* 2. general */
+
+
 /* -------------------------- specific & combined tags ------------------------- */
-h1, h2, h3 {
-	font-family: 'Roboto Slab', serif;
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto Slab', serif;
 }
 
-ul, li, p, div {
-	font-family: 'Roboto Condensed', sans-serif;
+ul,
+li,
+p,
+div {
+    font-family: 'Roboto Condensed', sans-serif;
 }
+
 body {
     height: 100%;
     min-height: 100%;
     width: 100%;
     max-width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
-header, body {
+
+header,
+body {
     background-color: #1e4968;
     color: #ffff;
 }
-nav, footer {
+
+nav,
+footer {
     background-color: #07314e;
     color: #ffff;
     max-width: 100%;
 }
+
+
 /* ----------------------------- banners and alerts ---------------------------- */
+
 #js {
-	text-align: center;
-	background-color: #07314e;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-#banner {
-	background-color: #ffff;
-	color: #07314e;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	text-align: center;
+    text-align: center;
+    background-color: #07314e;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
+#banner {
+    background-color: #ffff;
+    color: #07314e;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+
 /* ------------------------------------ header --------------------------------- */
+
 header {
     width: 100%;
     max-width: 100%;
     height: 40%;
     padding: 1%;
 }
-header h1, header img, header p {
-	display: flex;
-	align-items: center;
-	justify-items: center;
-	text-shadow: 2px 2px 2px #07314e;
 
-	}
+header h1,
+header img,
+header p {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-shadow: 2px 2px 2px #07314e;
+}
+
 header img {
-	height: 125px;
-	border-radius: 10px;
-	box-shadow: 3px 3px 3px #07314e;
-	grid-column: 1;
-	float: left;
-}
-header h1, header p{
-	grid-column: 2;
-	text-align: left;
-	padding-left: 1em;
+    height: 125px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #07314e;
+    grid-column: 1;
+    float: left;
 }
 
+header h1,
+header p {
+    grid-column: 2;
+    text-align: left;
+    padding-left: 1em;
+}
 
 
 /* --------------------------------- footer ------------------------------------ */
+
 footer {
     text-align: center;
     font-size: small;
     padding: 1%;
-    bottom: 0;  
+    bottom: 0;
 }
-footer a{
+
+footer a {
     color: #ffff;
 }
 
+
 /* ------------------------------ navigation bar ------------------------------- */
+
 nav {
-	margin: 0 auto;
-	max-width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
 }
+
 .navigation {
-	list-style: none;
-	padding: 0;
+    list-style: none;
+    padding: 0;
 }
+
 .navigation li:first-child {
-	display: block;
-	text-align: right;
+    display: block;
+    text-align: right;
 }
+
 .navigation li {
-	display: none;
+    display: none;
 }
+
 .navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-decoration: none;
-	color: #ffff;
-	font-weight: 700;
-	transition: 0.5s;
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 700;
+    transition: 0.5s;
 }
 
 .responsive li {
-	display: block;
+    display: block;
 }
+
 .navigation a:hover,
 .navigation a:focus {
-	color: #07314e;
-	background-color:#ffff;
+    color: #07314e;
+    background-color: #ffff;
 }
 
 .navigation #Current a {
-	color: #07314e;
-	background-color:#ffff;
+    color: #07314e;
+    background-color: #ffff;
 }
+
 
 /* ------------------------------- page content ----------------------------- */
 
-section {
+
+/* section {
   	margin: .5rem auto;
   	background-color: #1e4968;
-}
+} */
 
-article {
-	background-color:#07314e;;
-	color:#fff;
-	margin-bottom: 25px;
-	border: 1px solid #fff;
-	border-radius: 10px;
-	text-align: center;
-	width: 95%;
-	margin-left: auto;
-	margin-right: auto;
+.card {
+    background-color: #07314e;
+    ;
+    color: #fff;
+    margin-bottom: 25px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img {
-	max-width: 100%;
-	border-radius: 8px;
-	margin-top: auto;
-	margin-bottom: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-ul li {
+
+/* ul li {
 	padding: .75rem;
 	list-style: none;
-}
+} */
+
 
 /* medium screen */
+
 @media only screen and (min-width:625px) {
-
-	/* ------------------------------- navigation bar ------------------------------ */
+    /* ------------------------------- navigation bar ------------------------------ */
     .navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; 
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
-	
-		/* ------------------------------- page content ----------------------------- */
-
-		article {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			max-width: 44em;
-		}
-		article:nth-child(odd) img {
-			grid-column: 2;
-		}
-		
-		article:nth-child(odd) .data {
-			grid-column: 1;
-			grid-row: 1;
-		}
-
-		img {
-			max-width: 100%;
-
-		}
+        display: flex;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    /* ------------------------------- page content ----------------------------- */
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 44em;
+    }
+    .card:nth-child(odd) img {
+        grid-column: 1;
+    }
+    .card:nth-child(odd) .data {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    img {
+        max-width: 100%;
+    }
 }
 
+
 /* large screen */
+
 @media only screen and (min-width:900px) {
-	section {
-		display: grid;
-		grid-template-columns: 33% 33% 33%;
-	}
-	article {
-		display:block;
-	}
-	img {
-		max-width: 100%;
-	}
+    .cards {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+    .card {
+        display: block;
+    }
+    img {
+        max-width: 100%;
+    }
 }

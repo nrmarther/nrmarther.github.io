@@ -219,7 +219,30 @@ nav {
 	/* -------------------------------- page conent ------------------------------- */
 
 	#weather_summ {
-		bottom: 800px;
+		bottom: 1025px;
+	}
+
+	#daily {
+		display: grid;
+
+	}
+	.days {
+		grid-row: 1;
+		border-radius: 8px;
+		color: white;
+		background-color: #1e4968;
+		margin: .5em;
+		text-align: center;
+	}
+	.days h4 {
+		font-size: larger;
+		padding-top: 1.5em;
+		border-bottom: solid white 1px;
+	}
+	.days img {
+		background-color: white;
+		border-radius: 5px;
+		padding: 15px;
 	}
 
 }
@@ -230,11 +253,14 @@ nav {
 		max-width: 1400px;
 	}
 
+	
+	
+
 
 /* -------------------------------- page conent ------------------------------- */
 
 	#weather_summ {
-		bottom: 650px;
+		bottom: 850px;
 	}
 
 }

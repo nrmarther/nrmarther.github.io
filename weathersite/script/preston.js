@@ -1,4 +1,4 @@
-//---------------------------------GENERAL------------------------------
+//-------------------------------------------------------------- GENERAL ----------------------------------------------------------------
 //menu bar navigation
 const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.navigation')
@@ -15,11 +15,11 @@ let d = new Date(document.lastModified);
 document.getElementById('year').innerHTML = d.getUTCFullYear();
 
 
-let months = ["January", "February", "March", "April", "May",
+const months = ["January", "February", "March", "April", "May",
               "June", "July", "August", "September", "October",
               "November", "December"];
 
-let days = ["Sunday", "Monday", "Tuesday", "Wednesday", 
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", 
             "Thursday", "Friday", "Saturday"];
 
 
@@ -31,25 +31,10 @@ let lastUpdated = `${day}, ${d.getDate()} ${month} ${year}`;
 
 document.getElementById('modified').innerHTML = lastUpdated;
 
-
-
-function lastSave() {
-    const isoString = new Date(document.lastModified).toISOString();
-    const options = {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-        weekday: "long"
-    };
-    console.log(isoString);
-    const date = new Date(isoString);
-    const upDate = new Intl.DateTimeFormat("en-US", options)
-};
-
-//---------------------------------PRESTON PAGE-------------------------------
+//-------------------------------------------------------------- PRESTON PAGE -----------------------------------------------------------
 
 //do not show the 5 day forecast in mobile view
-var media = window.matchMedia("(max-width: 37.4em)");
+var media = window.matchMedia("(max-width: 625px)");
 
 function del5Day(media) {
     if (media.matches) {
@@ -64,7 +49,7 @@ media.addListener(del5Day);
 
 
 
-// ------------------ show pancake's in park banner on friday's ---------------
+// ------------------ show pancake's in park banner on friday's --------------
 var date = new Date();
 var day = date.getDay();
 function banner() {
@@ -79,30 +64,66 @@ function banner() {
 }
 banner();
 
+// ---------------------------- grab weather summary info -----------------------------
+const summaryURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=3a650560bc5a3c6957162bcafca53e0b";
+fetch(summaryURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
+    //info for hero summary
+    document.querySelector('#climate').textContent = jsObject.weather[0].main;  //climate
+    document.querySelector('#curTemp').textContent = jsObject.main.temp;        //current temp
+    document.querySelector('#humidity').textContent = jsObject.main.humidity;   //humidity
+    document.querySelector('#curSpeed').textContent = jsObject.wind.speed;      //wind speed
 
-// -------------------- Calculate the Windchill -------------------------------
-let temp = document.querySelector('#curTemp').innerText;
-let speed = document.querySelector('#curSpeed').innerText;
+    // -------------------- Calculate the Windchill -------------------------------
+        let temp = jsObject.main.temp;
+        let speed = jsObject.wind.speed;
 
-buildWC(speed, temp);
+        buildWC(speed, temp);
 
-function buildWC(speed, temp) {
-    let wcTemp = document.getElementById('windchill');
-   
-    // Compute the windchill
-    let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
-    console.log('windchill 01: ' + wc);
-   
-    // Round the answer down to integer
-    wc = Math.floor(wc);
-    console.log('windchill 02: ' + wc);
-   console.log(temp);
-    // If chill is greater than temp, return the temp
-    wc = (wc > temp) ? temp : wc;
-    console.log('windchill 03: ' + wc);
-   
-    // Display the windchill
-    console.log('windchill 04: ' + wc);
-    wc = wc+'°F';
-    wcTemp.innerHTML = wc;
+        function buildWC(speed, temp) {
+            let wcTemp = document.getElementById('windchill');
+        
+            // Compute the windchill
+            let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
+            // Round the answer down to integer
+            wc = Math.floor(wc);
+            // If chill is greater than temp, return the temp
+            wc = (wc > temp) ? temp : wc;
+            // Display the windchill
+            wc = wc+'°F';
+            wcTemp.innerHTML = wc;
+            }
+    
+    
+  });
+
+  //info for 5 day forecast
+  const dayURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&cnt=5&units=imperial&appid=3a650560bc5a3c6957162bcafca53e0b";
+  fetch(dayURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
+
+    const daysarr = document.getElementsByClassName('days');
+    const dayarr = document.getElementsByClassName('day');
+    const temparr = document.getElementsByClassName('dailyTemp');
+    const climatearr = document.getElementsByClassName('climate');
+    for (i=0; i < daysarr.length; i++) {
+        //loop ensures day cannot exceed 7
+        var newday= day + i
+        if (newday >= 7) {
+            newday %= 7
+        }
+        var imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';  // weather icon
+        var desc = jsObject.list[i].weather[0].description;  // note how we reference the weather array
+        dayarr[i].textContent = days[newday];
+        temparr[i].textContent = jsObject.list[i].main.temp + 'ºF';
+        climatearr[i].setAttribute('src', imagesrc);
+        climatearr[i].setAttribute('alt', desc);
     }
+    
+
+  });
+

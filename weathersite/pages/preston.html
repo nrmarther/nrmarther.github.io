@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/preston.css">
@@ -51,26 +51,49 @@
                 <div id ="hero">
                     <picture id = "hero_img">
                         <source media ="screen and (min-width: 1200px)" srcset="../media/preston_id_hero_large_label.jpg">
-                        <source media ="screen and (min-width: 37.5em)" srcset="../media/preston_id_hero_med_label.jpg">
+                        <source media ="screen and (min-width: 625px)" srcset="../media/preston_id_hero_med_label.jpg">
                         <img src="../media/preston_id_hero_mobile_label.jpg" alt="preston fields">
                     </picture>
                     <div id="hero_summ">
-                        <!-- <h3>Weather Summary</h3> -->
                         <ul id = "weather_summ">
                             <li>Weather Summary</li>
-                            <li>Currently: <span id = "climate">Rainy</span></li>
-                            <li>High: <span id="curTemp">54</span>ºF</li>
+                            <li>Currently: <span id = "climate"></span></li>
+                            <li>Current: <span id="curTemp"></span>ºF</li>
                             <li>Windchill: <span id = "windchill"></span></li>
-                            <li>Humidity: <span id = "humidity">95</span>%</li>
-                            <li>Wind Speed: <span id = "curSpeed">12</span>MPH</li>
+                            <li>Humidity: <span id = "humidity"></span>%</li>
+                            <li>Wind Speed: <span id = "curSpeed"></span>MPH</li>
                         </ul>
                     </div>
                 </div>
                 <div class="content_box">
                     <h3>5 Day Forecast</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                       Natus saepe vel libero illum. Nulla, impedit neque veritatis doloribus cum
-                       beatae fuga est accusantium eligendi optio, nesciunt rerum, a omnis ipsa.</p>
+                    <section id="daily">
+                        <article class ="days">
+                            <h4 class ="day"></h4>
+                            <img class ="climate" src="#" alt="">
+                            <p class ="dailyTemp"></p>
+                        </article>
+                        <article class = "days">
+                            <h4 class = "day"></h4>
+                            <img class ="climate" src="#" alt="">
+                            <p class = "dailyTemp"></p>
+                        </article>
+                        <article class = "days">
+                            <h4 class = "day"></h4>
+                            <img class ="climate" src="#" alt="">
+                            <p class = "dailyTemp"></p>
+                        </article>
+                        <article class = "days">
+                            <h4 class = "day"></h4>
+                            <img class ="climate" src="#" alt="">
+                            <p class = "dailyTemp"></p>
+                        </article>
+                        <article class = "days">
+                            <h4 class = "day"></h4>
+                            <img class ="climate" src="#" alt="">
+                            <p class = "dailyTemp"></p>
+                        </article>
+                    </section>
                 </div>
                 <div class="content_box" id="article">
                     <h3>Oh No! its raining Lorem Ipsum text!</h3>

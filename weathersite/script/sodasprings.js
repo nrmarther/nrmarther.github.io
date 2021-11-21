@@ -65,7 +65,7 @@ function banner() {
 banner();
 
 // ---------------------------- grab weather summary info -----------------------------
-const summaryURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=3a650560bc5a3c6957162bcafca53e0b";
+const summaryURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=3a650560bc5a3c6957162bcafca53e0b";
 fetch(summaryURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -100,7 +100,7 @@ fetch(summaryURL)
   });
 
   //info for 5 day forecast
-  const dayURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&cnt=5&units=imperial&appid=3a650560bc5a3c6957162bcafca53e0b";
+  const dayURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&cnt=5&units=imperial&appid=3a650560bc5a3c6957162bcafca53e0b";
   fetch(dayURL)
   .then((response) => response.json())
   .then((jsObject) => {

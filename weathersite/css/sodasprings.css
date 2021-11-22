@@ -219,7 +219,7 @@ nav {
 	/* -------------------------------- page conent ------------------------------- */
 
 	#weather_summ {
-		bottom: 1025px;
+		bottom: 1250px;
 	}
 
 	#daily {
@@ -229,10 +229,12 @@ nav {
 	.days {
 		grid-row: 1;
 		border-radius: 8px;
+		border: solid #07314e 2px;
 		color: white;
 		background-color: #1e4968;
 		margin: .5em;
 		text-align: center;
+		box-shadow: 5px 5px 5px grey;
 	}
 	.days h4 {
 		font-size: larger;
@@ -243,6 +245,17 @@ nav {
 		background-color: white;
 		border-radius: 5px;
 		padding: 15px;
+		box-shadow: 3px 3px 3px #07314e;
+	}
+
+	#fiveday {
+		text-align: center;
+		font-size: larger;
+		color: #07314e;
+		background-color: #fff;
+	}
+	#fiveday h3 {
+		border-bottom: solid #07314e 2px;
 	}
 
 }

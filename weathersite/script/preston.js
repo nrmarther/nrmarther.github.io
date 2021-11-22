@@ -64,6 +64,39 @@ function banner() {
 }
 banner();
 
+// --------------------------------- upcoming events ----------------------------------
+const requestURL = '../script/towndata.json';
+
+fetch(requestURL)
+    .then(function(response) {
+        if (response.ok) {
+            return response.json();
+        }
+        throw new ERROR('Network response was not ok');
+    })
+    .then(function(jsonObject) {
+        console.table(jsonObject); // temporary checking for valid response and data parsing
+        const towns = jsonObject['towns'];
+
+
+        for (let i = 0; i < towns.length; i++) {
+            let name = towns[i].name;
+            name = String(name);
+            //check for any of fish haven
+            if (name == "Preston") {
+                let town = towns[i];
+                let events = town.events;
+                console.log(events);
+                for (i=0; i < events.length; i++) {
+                    let li = document.createElement("li")
+                    li.textContent = events[i];
+
+                    document.querySelector("#events").appendChild(li)
+                }
+            }
+        }
+    })
+
 // ---------------------------- grab weather summary info -----------------------------
 const summaryURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=3a650560bc5a3c6957162bcafca53e0b";
 fetch(summaryURL)

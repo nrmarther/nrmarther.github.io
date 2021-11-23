@@ -87,9 +87,9 @@ fetch(requestURL)
                 let town = towns[i];
                 let events = town.events;
                 console.log(events);
-                for (i=0; i < events.length; i++) {
+                for (j=0; j < events.length; j++) {
                     let li = document.createElement("li")
-                    li.textContent = events[i];
+                    li.textContent = events[j];
 
                     document.querySelector("#events").appendChild(li)
                 }

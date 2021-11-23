@@ -47,23 +47,6 @@ function del5Day(media) {
 del5Day(media);
 media.addListener(del5Day);
 
-
-
-// ------------------ show pancake's in park banner on friday's --------------
-var date = new Date();
-var day = date.getDay();
-function banner() {
-    if (day == 5) {
-        //displays the pancake banner on friday
-        document.getElementById("banner").style.display = "block";
-    }
-    else {
-        //hides pancake banner on all other days
-        document.getElementById("banner").style.display = "none";
-    }
-}
-banner();
-
 // --------------------------------- upcoming events ----------------------------------
 const requestURL = '../script/towndata.json';
 
@@ -75,21 +58,16 @@ fetch(requestURL)
         throw new ERROR('Network response was not ok');
     })
     .then(function(jsonObject) {
-        console.table(jsonObject); // temporary checking for valid response and data parsing
         const towns = jsonObject['towns'];
-
-
         for (let i = 0; i < towns.length; i++) {
-            let name = towns[i].name;
-            name = String(name);
-            //check for any of fish haven
+            let name = String(towns[i].name);
+            //check for fish haven
             if (name == "Fish Haven") {
                 let town = towns[i];
                 let events = town.events;
-                console.log(events);
-                for (i=0; i < events.length; i++) {
+                for (j=0; j < events.length; j++) {
                     let li = document.createElement("li")
-                    li.textContent = events[i];
+                    li.textContent = events[j];
 
                     document.querySelector("#events").appendChild(li)
                 }
@@ -102,7 +80,6 @@ const summaryURL = "https://api.openweathermap.org/data/2.5/weather?id=5585010&u
 fetch(summaryURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
     //info for hero summary
     document.querySelector('#climate').textContent = jsObject.weather[0].main;  //climate
     document.querySelector('#curTemp').textContent = parseInt(jsObject.main.temp);        //current temp
@@ -135,8 +112,6 @@ fetch(summaryURL)
   fetch(dayURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
-
     const daysarr = document.getElementsByClassName('days');
     const dayarr = document.getElementsByClassName('day');
     const temparr = document.getElementsByClassName('dailyTemp');

@@ -2,137 +2,11 @@
 /* 5. large */
 
 /* 1. imports */
-
+@import 'general.css';
 /* 2. general */
-/* -------------------------- specific & combined tags ------------------------- */
-h1, h2, h3 {
-	font-family: 'Roboto Slab', serif;
-}
 
-ul, li, p, div {
-	font-family: 'Roboto Condensed', sans-serif;
-}
-body {
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
-    max-width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-}
-header, body {
-    background-color: #1e4968;
-    color: #ffff;
-}
-nav, footer {
-    background-color: #07314e;
-    color: #ffff;
-    max-width: 100%;
-}
-/* ----------------------------- banners and alerts ---------------------------- */
-#js {
-	text-align: center;
-	background-color: #07314e;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-#banner {
-	background-color: #ffff;
-	color: #07314e;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	text-align: center;
-}
-
-/* ------------------------------------ header --------------------------------- */
-header {
-    width: 100%;
-    max-width: 100%;
-    height: 40%;
-    padding: 1%;
-}
-header h1, header img, header p {
-	display: flex;
-	align-items: center;
-	justify-items: center;
-	text-shadow: 2px 2px 2px #07314e;
-
-	}
-header img {
-	height: 125px;
-	border-radius: 10px;
-	box-shadow: 3px 3px 3px #07314e;
-	grid-column: 1;
-	float: left;
-}
-header h1, header p{
-	grid-column: 2;
-	text-align: left;
-	padding-left: 1em;
-}
-main h2 {
-	text-align: center;
-	text-shadow: 2px 2px 2px #07314e;
-}
-
-
-
-/* --------------------------------- footer ------------------------------------ */
-footer {
-    text-align: center;
-    font-size: small;
-    padding: 1%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    bottom: 0;  
-}
-footer a{
-    color: #ffff;
-}
-
-/* ------------------------------ navigation bar ------------------------------- */
-nav {
-	margin: 0 auto;
-	max-width: 100%;
-}
-.navigation {
-	list-style: none;
-	padding: 0;
-}
-.navigation li:first-child {
-	display: block;
-	text-align: right;
-}
-.navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-decoration: none;
-	color: #ffff;
-	font-weight: 700;
-	transition: 0.5s;
-}
-
-.responsive li {
-	display: block;
-}
-.navigation a:hover,
-.navigation a:focus {
-	color: #07314e;
-	background-color:#ffff;
-}
-
-.navigation #Current a {
-	color: #07314e;
-	background-color:#ffff;
-}
-
-/* ------------------------------- page content ------------------------------- */
-/* ------------ FORM ------------ */
+/* page content */
+/* FORM */
 form fieldset {
 	background-color: #fff;
 	margin: 2rem 0;
@@ -227,23 +101,6 @@ form label.top input:required:valid {
 	}
 	form label.sbs {
 		padding: .4rem 0;
-	}
-
-/* ------------------------------- navigation bar ------------------------------ */
-    .navigation {
-		display: flex;
-
-	}
-	.navigation li {
-		display: block; 
-		flex: 1 1 auto;
-
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
 	}
 
 }

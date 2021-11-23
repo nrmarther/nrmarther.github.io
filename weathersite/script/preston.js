@@ -75,21 +75,21 @@ fetch(requestURL)
         throw new ERROR('Network response was not ok');
     })
     .then(function(jsonObject) {
-        console.table(jsonObject); // temporary checking for valid response and data parsing
         const towns = jsonObject['towns'];
 
-
+        console.log(towns.length);
         for (let i = 0; i < towns.length; i++) {
-            let name = towns[i].name;
-            name = String(name);
-            //check for any of fish haven
-            if (name == "Preston") {
+            console.log(i);
+            console.log(towns[i].name);
+            let nameString = String(towns[i].name);
+            //check for Preston
+            if (nameString == "Preston") {
+                console.log('Correct! Here is ' + nameString);
                 let town = towns[i];
-                let events = town.events;
-                console.log(events);
-                for (i=0; i < events.length; i++) {
+                let eventsArr = town.events;
+                for (j=0; j < eventsArr.length; j++) {
                     let li = document.createElement("li")
-                    li.textContent = events[i];
+                    li.textContent = eventsArr[j];
 
                     document.querySelector("#events").appendChild(li)
                 }
@@ -159,4 +159,6 @@ fetch(summaryURL)
     
 
   });
+
+  
 

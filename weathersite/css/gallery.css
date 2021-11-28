@@ -8,8 +8,41 @@
 /* 1. imports */
 @import 'general.css';
 /* 2. general */
+.weatherimgs {
+    display: grid;
+    list-style: none;
+    padding-left: 0%;
+}
+.weatherimg {
+    background-color: #07314e;
+    border-radius: 10px;
+    border: 2px white solid;
+    margin: 1em;
+}
+.weatherimg img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.weatherimg p {
+    padding: 1em;
+}
 
 /* medium screen */
 @media only screen and (min-width:625px) {
+    .weatherimgs {
+        grid-template-columns: 50% 50%;
+    }
 
+}
+
+/* large screen */
+@media only screen and (min-width:1200px) {
+    .weatherimgs {
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .weatherimg:hover {
+        box-shadow: 10px 10px 10px#07314e;
+    }
 }

@@ -1,5 +1,8 @@
 /* ------------------------------------- GENERAL ------------------------------- */
 /* specific & combined tags */
+#wrapper {
+	max-width: 100%;
+}
 h1, h2, h3 {
 	font-family: 'Roboto Slab', serif;
 }
@@ -26,7 +29,7 @@ nav, footer {
     max-width: 100%;
 }
 
-/* header */
+/* headers */
 header {
     width: 100%;
     max-width: 100%;
@@ -96,6 +99,29 @@ nav {
 	background-color:#ffff;
 }
 
+/* contact info */
+#contact {
+	background-color: #fff;
+	color: #1e4968;
+	font-size: larger;
+	border-radius: 10px 10px 0px 0px;
+	text-align: center;
+}
+#map {
+	padding-top: .25em;
+	padding-right: .25em;
+}
+#mapImg {
+	max-width: 95%;
+	height: 250px;
+	width: 450px;
+	border-radius: 8px;
+	box-shadow: 5px 5px 5px gray;
+}
+#contact h4 {
+	padding-top: 3%;
+}
+
 /* footer */
 footer {
     text-align: center;
@@ -126,11 +152,47 @@ footer a{
 	.navigation li:first-child {
 		display: none;
 	}
+	/* contact info */
+	#contact {
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+	#address {
+		grid-column: 1;
+		grid-row: 1;
+		padding-left: 5em;
+	}
+	#direct {
+		grid-column: 1;
+		grid-row: 2;
+		padding-left: 5em;
+	}
+	#map {
+		grid-column: 2;
+		grid-row: 1 / 3;
+	}
 }
 
 /* ----------------------   Large Screen --------------------------------------- */
 @media only screen and (min-width: 1200px) {
 	body {
 		max-width: 1400px;
+	}
+	/* contact info */
+	#contact {
+		grid-template-columns: 30% 70%;
+	}
+	#address {
+		grid-column: 1;
+		grid-row: 1;
+	}
+	#direct {
+		grid-column: 1;
+		grid-row: 2;
+	}
+	#map {
+		grid-column: 2;
+		grid-row: 1 / 3;
+		padding-top: .25em;
 	}
 }

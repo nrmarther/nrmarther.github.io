@@ -49,7 +49,7 @@ function lastSave() {
 };
 
 //request json for town info
-const requestURL = '../script/towndata.json';
+const requestURL = 'script/towndata.json';
 
 fetch(requestURL)
     .then(function(response) {

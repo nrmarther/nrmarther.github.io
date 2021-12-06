@@ -1,0 +1,74 @@
+<!-- TODO: change google maps image and link -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- primary font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <!-- secondary font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <title>Home Page</title>
+</head>
+
+<body id="home">
+    <div id="wrapper">
+        <header id="page-header">
+            <img src="media/weatherLogo.jpg" alt="Crop Watch Logo">
+            <h1>Crop Watch</h1>
+            <p>
+                <i>Helping you Watch your Crops!</i>
+            </p>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">Menu ☰</a></li>
+                <li id="Current"><a href="index.html">Home</a></li>
+                <li><a href="pages/preston.html">Department</a></li>
+                <li><a href="pages/join.html">Join</a></li>
+                <li><a href="pages/fishhaven.html">Gilbert</a></li>
+                <li><a href="pages/stormcenter.html">Directory</a></li>
+            </ul>
+        </nav>
+        <main>
+            
+            <section id="contact">
+                <div id = "address">
+                    <h4>Gilbert Chamber of Commerce</h4>
+                    <p>119 N Gilbert Rd <br>
+                        Unit 101 <br>
+                       Gilbert, AZ 85234<br>
+                       United States</p>
+                </div>
+                <div id="direct">
+                    <p>&#9742 (480) 892-0056</p>
+                </div>
+                <div id="map">
+                    <a href="https://www.google.com/maps/place/510+S+Center+St,+Rexburg,+ID+83440/@43.8155888,-111.7859908,17z/data=!3m1!4b1!4m5!3m4!1s0x53540b0163572709:0x7b5f9c3fc5e7faca!8m2!3d43.8155888!4d-111.7838021" target="_blank">
+                        <img src="media/map.jpg" alt="map of location" id="mapImg">
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id=year></span> | Gilbert Chamber of Commerce |
+                <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Documentation Site</a> | Last Updated: <span id='modified'></span>
+            </p>
+        </footer>
+        <script src="script/index.js"></script>
+    </div>
+</body>
+
+</html>

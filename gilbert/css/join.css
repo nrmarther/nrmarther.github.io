@@ -1,0 +1,106 @@
+/* 4. medium */
+/* 5. large */
+
+/* 1. imports */
+@import 'general.css';
+/* 2. general */
+
+/* page content */
+/* FORM */
+form fieldset {
+	background-color: #fff;
+	margin: 2rem 0;
+	border: 1px solid #07314e;
+	border-radius: 10px;
+	padding: 1rem 2%;
+}
+
+form h3 {
+	color: #07314e;
+	margin: 0 1rem;
+	padding: 0 .5rem
+}
+
+form label.top, form div {
+   display: block;
+   padding-top: 1rem;
+   color: #9c2c13;
+   font-size: .8rem;
+}
+
+form label {
+	color: #9c2c13;
+}
+
+form label.top input, 
+form label.top select, 
+form label.top textarea
+{
+   display: block;
+   font-size: 16px;
+   border: solid 1px #999;
+   border-radius: 4px;
+   padding: .75rem;
+   color: #555;
+   width: 100%;
+   max-width: 20rem;
+   background-color: rgba(0,0,0,0.1)
+}
+
+#retval input {
+	max-width: 19rem;
+}
+#retval {
+	display:flex;
+	align-items: center;
+}
+
+form label.sbs {
+	display: block;
+	padding: 0.75rem 0;
+	color: #555;
+}
+
+form input.submitBtn, #thanks input.return {
+	border: none;
+	background-color: #924444;
+	color: white;
+	border-radius: 1rem;
+	padding: .75rem 1.5rem;
+	margin: 0 0 2rem 2%;
+	width: 96%;
+	max-width: 20rem;
+
+}
+
+form label.top input:required {
+	border-left: red solid 6px;
+}
+form label.top input:required:valid {
+	border-left: green solid 6px;
+}
+
+#thanks {
+	background-color: #fff;
+	color: #1e4968;
+	text-shadow: none;
+	padding: 1rem;
+	border-radius: 8px;
+}
+#thanks h2 {
+	text-align: center;
+	text-shadow: none;
+}
+  
+
+
+/* Large Screen */
+@media only screen and (min-width: 37.5em) {
+	body {
+		max-width: 1400px;
+	}
+	form label.sbs {
+		padding: .4rem 0;
+	}
+
+}

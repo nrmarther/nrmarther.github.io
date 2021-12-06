@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/stormcenter.css">
+
+    <!-- primary font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <!-- secondary font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    
+    <title>Thank You | Crop Watch</title>
+</head>
+<body id = "stormCenter">
+    <div id="wrapper">
+        <header id="page-header">
+            <img src="../media/weatherLogo.jpg" alt="Crop Watch Logo">
+            <h1>Crop Watch</h1>
+            <p>
+                <i>Helping you Watch your Crops!</i>
+            </p>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">Menu ☰</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main id="thanks">
+            <h2>Thank You!</h2>
+            <p>We appreciate the time you took to fill out this form notifying us of the storm.
+                 We may be in contact with you soon to gather more information. Stay Safe!</p>
+
+            <input type="button" class="return" value="Return to Storm Center" onclick="stormcenter.html">
+
+            <section id="contact">
+                <div id = "address">
+                    <h4>Crop Watch</h4>
+                    <p>510 S Center St <br>
+                       Rexburg, ID 83460<br>
+                       United States</p>
+                </div>
+                <div id="direct">
+                    <p>&#9742 (999) 999-9999 <br>
+                       &#9993 cropwatch@byui.edu</p>
+                </div>
+                <div id="map">
+                    <a href="https://www.google.com/maps/place/510+S+Center+St,+Rexburg,+ID+83440/@43.8155888,-111.7859908,17z/data=!3m1!4b1!4m5!3m4!1s0x53540b0163572709:0x7b5f9c3fc5e7faca!8m2!3d43.8155888!4d-111.7838021" target="_blank">
+                        <img src="../media/map.jpg" alt="map of location" id="mapImg">
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id = year></span> | Crop Watch |
+                <a href="https://developer.mozilla.org/en-US/">MDN Documentation Site</a>
+                | BYU-Idaho | Last Updated: <span id='modified'></span></p>
+        </footer>
+        <script src="../script/stormcenter.js"></script>
+    </div>
+</body>
+</html>

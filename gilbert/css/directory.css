@@ -8,29 +8,29 @@
 /* 1. imports */
 @import 'general.css';
 /* 2. general */
-.weatherimgs {
-    display: grid;
-    list-style: none;
-    padding-left: 0%;
-}
-.weatherimg {
-    background-color: #07314e;
+.card {
+    background-color: #924444;
+    color: #fff;
+    margin-bottom: 25px;
+    border: 1px solid #fff;
     border-radius: 10px;
-    border: 2px white solid;
-    margin: 1em;
-}
-.weatherimg img {
-    max-width: 100%;
-    border-radius: 10px 10px 0 0;
+    text-align: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.weatherimg p {
-    padding: 1em;
+img {
+    max-width: 200px;
+    border-radius: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /* medium screen */
 @media only screen and (min-width:625px) {
-    .weatherimgs {
+    .cards {
+        display: grid;
         grid-template-columns: 50% 50%;
     }
 
@@ -38,11 +38,12 @@
 
 /* large screen */
 @media only screen and (min-width:1200px) {
-    .weatherimgs {
+    .cards {
+        display: grid;
         grid-template-columns: 33% 33% 33%;
     }
 
-    .weatherimg:hover {
-        box-shadow: 10px 10px 10px#07314e;
+    .card:hover {
+        box-shadow: 5px 5px 5px#07314e;
     }
 }

@@ -1,0 +1,46 @@
+{
+  "businesses": [
+    {
+      "name": "Joes Real BBQ",
+      "photo": "../media/joesLogo.jpg",
+      "contact": "(480) 503-3805",
+      "website": "https://www.joesrealbbq.com"
+    },
+    {
+      "name": "Arizona Hardwood Floor Supply",
+      "photo": null,
+      "contact": "(623) 742-9663",
+      "website": "https://www.azwood.com"
+    },
+    {
+      "name": "Freestone Recreation Center",
+      "photo": null,
+      "contact": "(480) 503-6202",
+      "website": "https://www.gilbertaz.gov/departments/parks-and-recreation/recreation-centers-classes/freestone-recreation-center"
+    },
+    {
+      "name": "Fuzzy's Taco Shop",
+      "photo": "../media/FuzzysLogo.jpg",
+      "contact": "https://fuzzystacoshop.com/contact-us/",
+      "website": "https://fuzzystacoshop.com"
+    },
+    {
+      "name": "Mercedes-Benz of gilbert",
+      "photo": "../media/MercedesLogo.jpg",
+      "contact": "(480) 447-3906",
+      "website": "https://www.mbgilbert.com"
+    },
+    {
+      "name": "Top Golf - Gilbert",
+      "photo": "../media/topGolfLogo.jpg",
+      "contact": "(480) 240-1282",
+      "website": "https://topgolf.com/us/gilbert/"
+    },
+    {
+      "name": "Rancho De Tia Rosa's",
+      "photo": "../media/TiaLogo.jpg",
+      "contact": "(480) 396-8787",
+      "website": "https://www.ranchodetiarosa.com"
+    }
+  ]  
+}

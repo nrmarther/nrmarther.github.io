@@ -4,11 +4,11 @@
 	max-width: 100%;
 }
 h1, h2, h3 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Mulish', sans-serif;
 }
 
 ul, li, p, div {
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Mulish', sans-serif;
 }
 body {
     height: 100%;
@@ -20,7 +20,7 @@ body {
 	position: relative;
 }
 header {
-    background-color: #ffffff;
+    background-color: #4b86b4;
     color: #4b86b4;
 }
 body {
@@ -47,11 +47,7 @@ header h1, header img {
 
 	}
 header img {
-	height: 125px;
-	border-radius: 10px;
-	box-shadow: 3px 3px 3px #07314e;
-	grid-column: 1;
-	float: left;
+	height: 175px;
 }
 header h1, header p{
 	grid-column: 2;

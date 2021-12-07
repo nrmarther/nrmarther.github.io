@@ -84,3 +84,33 @@ if ("IntersectionObserver" in window) {
 document.getElementsByClassName("submitBtn")[0].onclick = function () {
     location.href = "pages/join.html";
 };
+
+//info for 3 day forecast
+var date = new Date();
+var day = date.getDay();
+const dayURL = "https://api.openweathermap.org/data/2.5/onecall?lat=33.36&lon=-111.80&exclude=hourly,minutely&units=imperial&appid=3a650560bc5a3c6957162bcafca53e0b";
+fetch(dayURL)
+.then((response) => response.json())
+.then((jsObject) => {
+  console.log(jsObject);
+  
+  const daysarr = document.getElementsByClassName('days');
+  const dayarr = document.getElementsByClassName('day');
+  const temparr = document.getElementsByClassName('dailyTemp');
+  const climatearr = document.getElementsByClassName('climate');
+  for (i=0; i < daysarr.length; i++) {
+      //loop ensures day cannot exceed 7
+      var newday= day + i
+      if (newday >= 7) {
+          newday %= 7
+      }
+      var imagesrc = 'https://openweathermap.org/img/w/' + jsObject.daily[i].weather[0].icon + '.png';  // weather icon
+      var desc = jsObject.daily[i].weather[0].description;  // note how we reference the weather array
+      dayarr[i].textContent = days[newday];
+      temparr[i].textContent = parseInt(jsObject.daily[i].temp.day) + 'ºF';
+      climatearr[i].setAttribute('src', imagesrc);
+      climatearr[i].setAttribute('alt', desc);
+  }
+  
+
+});

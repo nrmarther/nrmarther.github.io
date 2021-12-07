@@ -28,10 +28,6 @@
 	width: 100%;
 	position: relative;
 }
-#hero_img {
-	position: relative;
-	max-width: 100%;
-}
 
 #weather_summ {
 	z-index: 10;

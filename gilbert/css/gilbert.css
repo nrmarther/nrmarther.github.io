@@ -13,15 +13,30 @@
 /* ------------------------------- page content ------------------------------- */
 
 
-  /* ------------------------------ hero image -------------------------------- */
+  /* ------------------------------ images -------------------------------- */
 #hero {
 	width: 100%;
 	position: relative;
 	max-width: 100%;
 }
-
 .img {
 	border-radius: 8px;
+}
+
+#images {
+	max-width: 1400px;
+	display: grid;
+	grid-template-columns: 10;
+	grid-template-rows: 10;
+}
+#mall {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	width: 33%;
+}
+#mural {
+	grid-column-start: 2;
+	grid-column-end: 5;
 }
 /* ------------------------------ upcoming events -------------------------------*/
 #eventBox {
@@ -30,10 +45,11 @@
 	background-color: #fff;
 	border-radius: 8px;
 }
-#eventBox h3 {
-	font-size: larger;
+#eventBox h2 {
+	font-size: x-large;
 	padding-bottom: .25em;
-	border-bottom: solid #1e4968 2px;
+	border-bottom: solid #924444 2px;
+	box-shadow: none !important;
 }
 #events {
 	list-style: none;

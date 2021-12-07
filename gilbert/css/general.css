@@ -5,6 +5,7 @@
 }
 h1, h2, h3 {
 	font-family: 'Mulish', sans-serif;
+	text-align: center;
 }
 
 ul, li, p, div {
@@ -39,14 +40,11 @@ header {
     height: 40%;
     padding: 1%;
 }
-header h1, header img {
+header img {
 	display: flex;
 	align-items: center;
 	justify-items: center;
 	text-shadow: 2px 2px 2px #07314e;
-
-	}
-header img {
 	height: 175px;
 }
 header h1, header p{
@@ -63,6 +61,7 @@ main h2 {
 nav {
 	margin: 0 auto;
 	max-width: 100%;
+	border-radius: 8px;
 }
 .navigation {
 	list-style: none;

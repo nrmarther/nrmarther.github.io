@@ -9,24 +9,20 @@ form fieldset {
 	border-radius: 10px;
 	padding: 1rem 2%;
 }
-
 form h3 {
 	color: #07314e;
 	margin: 0 1rem;
 	padding: 0 .5rem
 }
-
 form label.top, form div {
    display: block;
    padding-top: 1rem;
    color: #9c2c13;
    font-size: .8rem;
 }
-
 form label {
 	color: #9c2c13;
 }
-
 form label.top input, 
 form label.top select, 
 form textarea
@@ -40,6 +36,10 @@ form textarea
    width: 100%;
    max-width: 20rem;
    background-color: rgba(0,0,0,0.1)
+}
+#comment {
+	margin-top: .75rem;
+	margin-bottom: .75rem;
 }
 
 
@@ -73,6 +73,11 @@ form label.top input:required:valid {
 #thanks h2 {
 	text-align: center;
 	text-shadow: none;
+}
+
+#gmap {
+	border-radius:8px;
+	padding:.25rem;
 }
   
 

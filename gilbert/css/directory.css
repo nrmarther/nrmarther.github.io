@@ -20,7 +20,7 @@
     margin-right: auto;
 }
 
-img {
+.card img {
     max-width: 200px;
     border-radius: 8px;
     margin-top: auto;

@@ -31,7 +31,7 @@ let lastUpdated = `${day}, ${d.getDate()} ${month} ${year}`;
 
 document.getElementById('modified').innerHTML = lastUpdated;
 
-//-------------------------------------------------------------- PRESTON PAGE -----------------------------------------------------------
+//-------------------------------------------------------------- CONTACT PAGE -----------------------------------------------------------
 
 //do not show the 5 day forecast in mobile view
 var media = window.matchMedia("(max-width: 625px)");
@@ -47,22 +47,6 @@ function del5Day(media) {
 del5Day(media);
 media.addListener(del5Day);
 
-
-
-// ------------------ show pancake's in park banner on friday's --------------
-var date = new Date();
-var day = date.getDay();
-function banner() {
-    if (day == 5) {
-        //displays the pancake banner on friday
-        document.getElementById("banner").style.display = "block";
-    }
-    else {
-        //hides pancake banner on all other days
-        document.getElementById("banner").style.display = "none";
-    }
-}
-banner();
 
 // --------------------------------- upcoming events ----------------------------------
 const requestURL = '../script/towndata.json';

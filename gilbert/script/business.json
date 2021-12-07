@@ -1,20 +1,20 @@
 {
   "businesses": [
     {
-      "name": "Joes Real BBQ",
+      "name": "Joe's Real BBQ",
       "photo": "../media/joesLogo.jpg",
       "contact": "(480) 503-3805",
       "website": "https://www.joesrealbbq.com"
     },
     {
       "name": "Arizona Hardwood Floor Supply",
-      "photo": null,
+      "photo": "null",
       "contact": "(623) 742-9663",
       "website": "https://www.azwood.com"
     },
     {
       "name": "Freestone Recreation Center",
-      "photo": null,
+      "photo": "null",
       "contact": "(480) 503-6202",
       "website": "https://www.gilbertaz.gov/departments/parks-and-recreation/recreation-centers-classes/freestone-recreation-center"
     },

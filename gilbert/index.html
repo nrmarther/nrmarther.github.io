@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <title>Home Page</title>
 </head>
@@ -35,24 +37,112 @@
             </ul>
         </nav>
         <main>
-            
-            <section id="contact">
-                <div id = "address">
-                    <h4>Gilbert Chamber of Commerce</h4>
-                    <p>119 N Gilbert Rd <br>
-                        Unit 101 <br>
-                       Gilbert, AZ 85234<br>
-                       United States</p>
-                </div>
-                <div id="direct">
-                    <p>&#9742 (480) 892-0056</p>
-                </div>
-                <div id="map">
-                    <a href="https://www.google.com/maps/place/510+S+Center+St,+Rexburg,+ID+83440/@43.8155888,-111.7859908,17z/data=!3m1!4b1!4m5!3m4!1s0x53540b0163572709:0x7b5f9c3fc5e7faca!8m2!3d43.8155888!4d-111.7838021" target="_blank">
-                        <img src="media/map.jpg" alt="map of location" id="mapImg">
-                    </a>
-                </div>
-            </section>
+            <div class="content_box" id = "eventBox">
+                <h2>Upcoming Events</h2>
+                <ul id="events">
+                    <li>#LightTheWorld giving machines back in Gilbert by the water tower in Downtown Gilbert</li>
+                    <li>Holiday Street Musicians are back and performing at the Santan Village mall</li>
+                    <li>Enjoy a tour of the O.H.S.O Brewery in Downtown Gilbert</li>
+                    <li>Enjoy breakfast with Santa at the Mesa Convention Center this Saturday, December 11 from 8:30 - 11:00 AM</li>
+                </ul>
+            </div>
+
+            <div class="cards"></div>
+                <article class="card">
+                    <h3>Joe's Real BBQ</h3>
+                    <a href="https://www.joesrealbbq.com/"><img src="media/joesLogo.jpg" alt="Joes BBQ logo"></a>
+                    <p>Joe's Real BBQ has been around since 1997 and everybody seems to love them;
+                        their BBQ sandwiches and macaroni and cheese are unmatched here in Gilbert.
+                        They are great for any and all catering events or just a casual lunch with your family!
+                        Be sure to stop in to Joe's in Downtown Gilbert whether you live in Gilbert or are just visiting! </p>
+                </article>
+                <article class="card">
+                    <h3>Top Golf - Gilbert</h3>
+                    <a href="https://topgolf.com/us/gilbert/"><img src="media/topGolfLogo.jpg" alt="Top Golf logo"></a>
+                    <p>Top Golf is a great place to enjoy fantastic food, drinks, and a novice-friendly game of golf.
+                        There seems to not be anywhere else in gilbert where you can have a shaded game of golf while rexlaxing with your friends with a cold glass of beer,
+                        head over to Top Golf's multi-level driving range to see what it's all about!
+                    </p>
+                </article>
+                <article class="card">
+                    <h3 class="data">Mercedes-Benz - Gilbert</h3>
+                    <a href="https://www.mbgilbert.com"><img src="media/MercedesLogo.jpg" alt="Mercedes-Benz logo"></a>
+                    <p class="data">Gilbert's Mercedes-Benz dealership is a fantastic location to have a look around for new vehicles or have your current mercedes vehicle serviced.
+                        The dealership is a hotspot location to try new luxury vehciles and find the ultimate comfort in your driving experience.
+                    </p>
+                </article>
+                <section id="join">
+                    <h2>Join the Chamber!</h2>
+                    <p> The gilbert Chamber of Commerce seeks to imporove the Gilbert community and create the best business climate possible for small and large business owners.
+                        Being part of the Chamber of Commerce allows you to be in the know about new federal, state, and local laws that affect small businesses. 
+                        Are you a business owner local to Gilbert? Do you see issues in the town that YOU have a solution for? 
+                        We would love to have you join the Gilbert Chamber of Commerce to add all of your talents to make our community better!
+                        If you are curious about what being a part of the Chamber of Commerce is like, fill our an Application on our Join page!
+                    </p>
+                    <input type="submit" value="Join Us Now!" class="submitBtn">
+                </section>
+
+                <section id="contact">
+                    <div id = "address">
+                        <h4>Gilbert Chamber of Commerce</h4>
+                        <p>119 N Gilbert Rd <br>
+                            Unit 101 <br>
+                           Gilbert, AZ 85234<br>
+                           United States</p>
+                    </div>
+                    <div id="direct">
+                        <p>&#9742; (480) 892-0056</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" 
+                            height="35" fill="currentColor" class="bi bi-twitter"
+                            viewBox="0 0 16 16">
+                
+                            <path d="M5.026 15c6.038 0 9.341-5.003 
+                            9.341-9.334 0-.14 0-.282-.006-.422A6.685 
+                            6.685 0 0 0 16 3.542a6.658 6.658 0 0 
+                            1-1.889.518 3.301 3.301 0 0 0 1.447-1.817
+                            6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 
+                            0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 
+                            3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 
+                            0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 
+                            2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 
+                            3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 
+                            2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 
+                            0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" 
+                            height="35" fill="currentColor" class="bi bi-youtube"
+                            viewBox="0 0 16 16">
+                
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 
+                            6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172
+                            .883.22 1.402l.01.104.022.26.008.104c.065.914.073
+                            1.77.074 1.957v.075c-.001.194-.01 1.108-.082 
+                            2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 
+                            1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312
+                            -5.569.334-6.18.335h-.142c-.309 0-1.587-.006
+                            -2.927-.052l-.17-.006-.087-.004-.171-.007-.171
+                            -.007c-1.11-.049 -2.167-.128-2.654-.26a2.007 
+                            2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986
+                            -.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 
+                            1 0 7.68v-.123c.002-.215.01-.958.064-1.778l
+                            .007-.103.003-.052.008-.104.022-.26.01-.104c
+                            .048-.519.119-1.023.22-1.402a2.007 2.007 0 0 
+                            1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17
+                            -.007.172-.006.086-.003.171-.007A99.788 99.788 
+                            0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157
+                            -2.408L6.4 5.209z" />
+                        </svg>
+
+                    </div>
+                    <div id="map">
+                        <iframe  id="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3332.7270095199824!2d-111.79141928458075!3d33.352081080802265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba914242d3fa1%3A0x8dfc4a6640e9b832!2s119%20N%20Gilbert%20Rd%2C%20Gilbert%2C%20AZ%2085234!5e0!3m2!1sen!2sus!4v1638846446726!5m2!1sen!2sus" 
+                        width="400" 
+                        height="300" 
+                        style="border:0;"
+                        allowfullscreen="" 
+                        loading="lazy"></iframe>
+                    </div>
+                </section>
         </main>
         <footer>
             <p>&copy; <span id=year></span> | Gilbert Chamber of Commerce |

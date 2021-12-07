@@ -23,11 +23,13 @@
 .card img {
     max-width: 200px;
     border-radius: 8px;
+    margin-top: 25px;
     margin-top: auto;
     margin-bottom: auto;
 }
 
 /* medium screen */
+/*
 @media only screen and (min-width:625px) {
     .cards {
         display: grid;
@@ -35,9 +37,9 @@
     }
 
 }
-
+*/
 /* large screen */
-@media only screen and (min-width:1200px) {
+/* @media only screen and (min-width:1200px) {
     .cards {
         display: grid;
         grid-template-columns: 33% 33% 33%;
@@ -46,4 +48,4 @@
     .card:hover {
         box-shadow: 5px 5px 5px#07314e;
     }
-}
+} */

@@ -101,13 +101,17 @@ fetch(requestURL)
               index.textContent = businesses[i].motto;
               cp.textContent = 'Contact business here: ' + businesses[i].contact;
               ar.textContent = 'Website: ' + businesses[i].website;
-              image.setAttribute('src', businesses[i].photo);
-              image.setAttribute('alt', businesses[i].name + ' logo');
+              if (businesses[i].photo != "null") {
+                image.setAttribute('src', businesses[i].photo);
+                image.setAttribute('alt', businesses[i].name + ' logo');
+              }
 
               //add elements to have correct children
-              card.appendChild(data)
-              data.appendChild(h2);
-              card.appendChild(image);
+              card.appendChild(h2);
+              if (businesses[i].photo != "null") {
+                card.appendChild(image);
+              }
+              card.appendChild(data);
               data.appendChild(index);
               data.appendChild(cp);
               data.appendChild(ar);

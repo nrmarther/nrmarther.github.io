@@ -9,8 +9,39 @@
 /* 2. general */
 
 /* page content */
+img {
+    max-width: 100%;
+}
+
+#eventBox {
+	text-align: center;
+	color: #924444;
+	background-color: #fff;
+	border-radius: 8px;
+}
+#eventBox h2 {
+	font-size: x-large;
+	padding-bottom: .25em;
+	border-bottom: solid #924444 2px;
+	box-shadow: none !important;
+}
+#events {
+	list-style: none;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+#events li :nth-child(odd) {
+	grid-column: 1;
+}
+#events li :nth-child(even) {
+	grid-column: 2;
+}
+#events li {
+	padding: .5em;
+	font-size: larger;
+}
 .card {
-    background-color: #07314e;
+    background-color: #924444;
     color: #fff;
     margin-bottom: 25px;
     border: 1px solid #fff;
@@ -21,11 +52,39 @@
     margin-right: auto;
 }
 
-img {
+.card img {
     max-width: 100%;
     border-radius: 8px;
+    margin-top: 25px;
     margin-top: auto;
     margin-bottom: auto;
+}
+#join {
+    background-color: #ffffff;
+    color: #666666;
+    margin-bottom: 25px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input.submitBtn{
+	border: none;
+	background-color: #924444;
+	color: white;
+	border-radius: 1rem;
+	padding: .75rem 1.5rem;
+	margin-bottom: .75rem;
+	width: 96%;
+	max-width: 20rem;
+    text-align: center;
+}
+#gmap {
+    max-width: 100% !important;
+    border-radius: 8px;
 }
 
 /* ----------------------------------- medium screen ------------------------------- */
@@ -38,13 +97,17 @@ img {
     }
     .card:nth-child(odd) img {
         grid-column: 1;
+        grid-row: 1
     }
     .card:nth-child(odd) .data {
         grid-column: 2;
-        grid-row: 1;
     }
     img {
         max-width: 100%;
+    }
+
+    .card img {
+        max-width: 200px;
     }
 }
 
@@ -61,4 +124,5 @@ img {
     img {
         max-width: 100%;
     }
+
 }

@@ -38,34 +38,7 @@
 	grid-column-start: 2;
 	grid-column-end: 5;
 }
-/* ------------------------------ upcoming events -------------------------------*/
-#eventBox {
-	text-align: center;
-	color: #924444;
-	background-color: #fff;
-	border-radius: 8px;
-}
-#eventBox h2 {
-	font-size: x-large;
-	padding-bottom: .25em;
-	border-bottom: solid #924444 2px;
-	box-shadow: none !important;
-}
-#events {
-	list-style: none;
-	display: grid;
-	grid-template-columns: 50% 50%;
-}
-#events li :nth-child(odd) {
-	grid-column: 1;
-}
-#events li :nth-child(even) {
-	grid-column: 2;
-}
-#events li {
-	padding: .5em;
-	font-size: larger;
-}
+
 
 /* medium screen */
 @media only screen and (min-width:625px) {

@@ -42,8 +42,8 @@
             <form method="get" action="thanks.html">
                 <fieldset>
                     <h3>Personal Information</h3>
-                    <label class="top">First Name* <input type="fname" name="fname" pattern="[A-Za-z]{5,}" required></label>
-                    <label class="top">Last Name* <input type="lname" name="lname" pattern="[A-Za-z]{5,}" required></label>
+                    <label class="top">First Name* <input type="text" name="fname" pattern="[A-Za-z]{5,}" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" pattern="[A-Za-z]{5,}" required></label>
                     <label class="top">Title <input type="text" name="title" placeholder="Engineer"></label>
                     <label class="top">Email <input type="email" name="email" placeholder="example@domain.com"></label>
                     <label class="top">Cell Phone* <input type="tel" name="phone" placeholder="1234445555" required></label>
@@ -59,13 +59,12 @@
     
                 <fieldset>
                     <h3>Membership</h3>
-                    <label class="top"> Membership Level
+                    <section class="top"> Membership Level
                         <label class="sbs"><input type="radio" name = "membership" value="non-profit">Non-Profit ($100)</label>
                         <label class="sbs"><input type="radio" name = "membership" value="bronze">Bronze ($200)</label>
                         <label class="sbs"><input type="radio" name = "membership" value="silver">Silver ($400)</label>
                         <label class="sbs"><input type="radio" name = "membership" value="gold">Gold ($1000)</label>
-
-                    </label>
+                    </section>
                 </fieldset>
     
                 <input type="submit" value="Join the Gilbert Chamber" class="submitBtn">

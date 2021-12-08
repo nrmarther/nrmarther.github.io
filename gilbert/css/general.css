@@ -109,16 +109,10 @@ nav {
 	border-radius: 10px 10px 0px 0px;
 	text-align: center;
 }
-#map {
+#gmap {
+	border-radius: 8px;
 	padding-top: .25em;
 	padding-right: .25em;
-}
-#mapImg {
-	max-width: 95%;
-	height: 250px;
-	width: 450px;
-	border-radius: 8px;
-	box-shadow: 5px 5px 5px gray;
 }
 #contact h4 {
 	padding-top: 3%;

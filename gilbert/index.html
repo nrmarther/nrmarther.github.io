@@ -37,6 +37,35 @@
             </ul>
         </nav>
         <main>
+            <section id="images">
+                <img src="media/museum.jpeg" alt="gilbert History Museum" id="museum">
+                <img src="media/gilbert_wall.jpeg" alt="gilbert history mural" id="wall">
+            </section>
+            <section id="currWeather">
+                <h2>Current Gilbert Weather</h2>
+                <ul id="weather">
+                    <li id="currtemp"></li>
+                    <li id="humidity"></li>
+                    <li id="weatherdesc"></li>
+                </ul>
+            </section>
+            <section id="daily">
+                <article class ="days">
+                    <h4 class ="day"></h4>
+                    <img class ="climate" src="#" alt="">
+                    <p class ="dailyTemp"></p>
+                </article>
+                <article class = "days">
+                    <h4 class = "day"></h4>
+                    <img class ="climate" src="#" alt="">
+                    <p class = "dailyTemp"></p>
+                </article>
+                <article class = "days">
+                    <h4 class = "day"></h4>
+                    <img class ="climate" src="#" alt="">
+                    <p class = "dailyTemp"></p>
+                </article>
+            </section>
             <div class="content_box" id = "eventBox">
                 <h2>Upcoming Events</h2>
                 <ul id="events">
@@ -46,29 +75,10 @@
                     <li>Enjoy breakfast with Santa at the Mesa Convention Center this Saturday, December 11 from 8:30 - 11:00 AM</li>
                 </ul>
             </div>
-            <div class="content_box" id='threeday'>
-                <h3>3 Day Forecast</h3>
-                <section id="daily">
-                    <article class ="days">
-                        <h4 class ="day"></h4>
-                        <img class ="climate" src="#" alt="">
-                        <p class ="dailyTemp"></p>
-                    </article>
-                    <article class = "days">
-                        <h4 class = "day"></h4>
-                        <img class ="climate" src="#" alt="">
-                        <p class = "dailyTemp"></p>
-                    </article>
-                    <article class = "days">
-                        <h4 class = "day"></h4>
-                        <img class ="climate" src="#" alt="">
-                        <p class = "dailyTemp"></p>
-                    </article>
-                </section>
-            </div>
-            <div class="cards"></div>
+                
+            <div class="cards">
                 <article class="card">
-                    <h3>Joe's Real BBQ</h3>
+                    <h3 class="data">Joe's Real BBQ</h3>
                     <a href="https://www.joesrealbbq.com/"><img src="media/joesLogo.jpg" alt="Joes BBQ logo"></a>
                     <p>Joe's Real BBQ has been around since 1997 and everybody seems to love them;
                         their BBQ sandwiches and macaroni and cheese are unmatched here in Gilbert.
@@ -76,7 +86,7 @@
                         Be sure to stop in to Joe's in Downtown Gilbert whether you live in Gilbert or are just visiting! </p>
                 </article>
                 <article class="card">
-                    <h3>Top Golf - Gilbert</h3>
+                    <h3 class="data">Top Golf - Gilbert</h3>
                     <a href="https://topgolf.com/us/gilbert/"><img src="media/topGolfLogo.jpg" alt="Top Golf logo"></a>
                     <p>Top Golf is a great place to enjoy fantastic food, drinks, and a novice-friendly game of golf.
                         There seems to not be anywhere else in gilbert where you can have a shaded game of golf while rexlaxing with your friends with a cold glass of beer,
@@ -90,6 +100,7 @@
                         The dealership is a hotspot location to try new luxury vehciles and find the ultimate comfort in your driving experience.
                     </p>
                 </article>
+            </div>
                 <section id="join">
                     <h2>Join the Chamber!</h2>
                     <p> The gilbert Chamber of Commerce seeks to imporove the Gilbert community and create the best business climate possible for small and large business owners.

@@ -8,51 +8,54 @@
 @import 'general.css';
 /* 2. general */
 
-/* page content */
+/* page header */
 header img {
     max-width: 100%;
     position: relative
 }
 
-#eventBox {
-	text-align: center;
-	color: #924444;
-	background-color: #fff;
-	border-radius: 8px;
+/* -- images --*/
+#museum {
+    max-width: 100%;
+    margin-bottom: 10px;
 }
-#eventBox h2 {
-	font-size: x-large;
-	padding-bottom: .25em;
-	border-bottom: solid #924444 2px;
-	box-shadow: none !important;
-}
-#events {
-	list-style: none;
-	display: grid;
-	grid-template-columns: 50% 50%;
-}
-#events li :nth-child(odd) {
-	grid-column: 1;
-}
-#events li :nth-child(even) {
-	grid-column: 2;
-}
-#events li {
-	padding: .5em;
-	font-size: larger;
+#wall {
+    z-index: 1;
+    display: none;
 }
 
+/* current weather box */
+#currWeather {
+    background-color: #ff6700;
+    color: #000000;
+    width: 350px;
+    border-radius: 8px;
+    padding: 3px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+    width: 95%;
+    margin-bottom: 10px;
+}
+#currWeather h2 {
+    border-bottom: solid 2px black;
+    font-size: x-large;
+	padding-bottom: .25em;
+	box-shadow: none !important;
+}
+#currWeather li {
+    list-style: none;
+}
+
+/* -- three day forecast -- */
 #daily {
     display: grid;
-    position: absolute;
-    top: 0px;
-    right: 10px;
+    margin-bottom: 10px;
 }
 .days img {
     background-color: white;
-    border-radius: 5px;
     padding: 15px;
-    box-shadow: 3px 3px 3px #666666;
 }
 .days {
     grid-row: 1;
@@ -65,6 +68,41 @@ header img {
     box-shadow: 3px 3px 3px #07314e;
 }
 
+/* -- upcoming events box -- */
+#eventBox {
+	text-align: center;
+	color: #924444;
+	background-color: #fff;
+	border-radius: 8px;
+    z-index: 10;
+    padding-top: 5px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#eventBox h2 {
+	font-size: x-large;
+	padding-bottom: .25em;
+	border-bottom: solid #924444 2px;
+	box-shadow: none !important;
+}
+#events {
+	list-style: none;
+}
+#events li :nth-child(odd) {
+	grid-column: 1;
+}
+#events li :nth-child(even) {
+	grid-column: 2;
+}
+#events li {
+	padding: .5em;
+	font-size: larger;
+}
+
+
+
+/* -- business highlights -- */
 .card {
     background-color: #924444;
     color: #fff;
@@ -84,7 +122,11 @@ header img {
     margin-top: auto;
     margin-bottom: auto;
 }
+.card p {
+    padding: 8px;
+}
 
+/* -- join the Chamber -- */
 #join {
     background-color: #ffffff;
     color: #666666;
@@ -92,11 +134,10 @@ header img {
     border: 1px solid #fff;
     border-radius: 10px;
     text-align: center;
-    width: 95%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
-
 input.submitBtn{
 	border: none;
 	background-color: #924444;
@@ -109,14 +150,38 @@ input.submitBtn{
     text-align: center;
 }
 
+/* -- imbedded map -- */
 #gmap {
     max-width: 100% !important;
     border-radius: 8px;
 }
 
 /* ----------------------------------- medium screen ------------------------------- */
-@media only screen and (min-width:625px) {
-    /* page content */
+@media only screen and (min-width:800px) {
+    /* -- Current Gilbert Weather -- */
+    #currWeather {
+        position: absolute;
+        background-color: #4b86b4;
+        right: 3%;
+        width: 35%;
+    }
+    
+    /* -- three day forecast -- */
+    #daily {
+        display: grid;
+        position: absolute;
+        top: 35.5%;
+        right: 6%;
+    }
+
+    /* -- Upcoming Events -- */
+    #eventBox {
+        max-width: 50%;
+        margin-left: 10px;
+    }
+    
+
+    /* -- business highlights -- */
     .card {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -141,16 +206,65 @@ input.submitBtn{
 
 
 /* ---------------------------------- large screen ---------------------------------- */
-@media only screen and (min-width:900px) {
-    .cards {
+@media only screen and (min-width:895px) {
+    /* header image */
+    img {
+        max-width: 100%;
+    }
+    /* top images */
+    #images img {
+        border-radius: 8px;
+    }
+    #images #museum {
+        width: 50%;
+        position:relative;
+        left: 9%;
+        top: 25%;
+    }
+    #images #wall {
+        display: block;
+        width: 35%;
+        position: absolute;
+        top: 27%;
+        right: 9%;
+    }
+
+    /* Current Gilbert Weather */
+    #currWeather {
+        background-color: #ff6700;
+        position: absolute;
+        top: 13%;
+        z-index: 3;
+    }
+
+    /* three day forecast */
+    #daily {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+    }
+
+    /* -- upcoming events -- */
+    #eventBox {
+        max-width: 45%;
+        position: relative;
+        left: 3%;
+    }
+    #events {
         display: grid;
-        grid-template-columns: 33% 33% 33%;
+        grid-template-columns: 50% 50%;
+    }
+    /* -- business highlights -- */
+    .cards {
+        position: relative;
+        z-index: 3;
+        display: grid;
+        grid-auto-flow: column;
+        margin-top: 2%;
     }
     .card {
         display: block;
     }
-    img {
-        max-width: 100%;
-    }
+   
 
 }

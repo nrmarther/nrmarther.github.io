@@ -85,7 +85,7 @@ form label.top input:required:valid {
 	color: #1e4968;
 	text-shadow: none;
 	padding: 1rem;
-	border-radius: 8px;
+	border-radius:8px
 }
 #thanks h2 {
 	text-align: center;

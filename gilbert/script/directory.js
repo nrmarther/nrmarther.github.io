@@ -32,7 +32,7 @@ let lastUpdated = `${day}, ${d.getDate()} ${month} ${year}`;
 document.getElementById('modified').innerHTML = lastUpdated;
 
 
-// ------------------------ DIRECTORY PAGE PAGE ---------------------------
+// ------------------------ DIRECTORY PAGE ---------------------------
 //lazy load images
 let imagesToLoad = document.querySelectorAll("img[data-src]");
 

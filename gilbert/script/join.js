@@ -37,7 +37,7 @@ function adjustRating(rating) {
     document.getElementById("ratingvalue").innerHTML = rating;
 }
 
-//return to storm center page from thank you page
+//return to home page from thank you page
 document.getElementsByClassName("return")[0].onclick = function () {
     location.href = "../index.html";
 };

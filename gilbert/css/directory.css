@@ -8,6 +8,24 @@
 /* 1. imports */
 @import 'general.css';
 /* 2. general */
+.buttons {
+    display: none;
+    float: right;
+    margin-right: 2rem;
+  }
+  .buttons div {
+    margin: 10px;
+    color: #fffffa;
+    cursor: pointer;
+  }
+  .buttons div > * {
+    pointer-events: none;
+  }
+  .cards {
+      display: block;
+      width: 100%;
+  }
+
 .card {
     background-color: #924444;
     color: #fff;
@@ -29,23 +47,22 @@
 }
 
 /* medium screen */
-/*
+
 @media only screen and (min-width:625px) {
-    .cards {
+    .buttons {
+        display: flex;
+      }
+      .cards {
         display: grid;
-        grid-template-columns: 50% 50%;
-    }
+        grid-template-columns: 1fr 1fr;
+      }
+      .cards.list {
+        grid-template-columns: 1fr;
+      }
 
 }
-*/
-/* large screen */
-/* @media only screen and (min-width:1200px) {
-    .cards {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-    }
 
-    .card:hover {
-        box-shadow: 5px 5px 5px#07314e;
-    }
-} */
+/* large screen */
+@media only screen and (min-width:1200px) {
+   
+}

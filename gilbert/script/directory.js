@@ -65,6 +65,25 @@ if ("IntersectionObserver" in window) {
   });
 }
 
+//change the view with toggle button
+var cards = document.getElementById("cards");
+
+document.addEventListener("click", function (event) {
+  if (!event.target.matches(".list")) return;
+
+  // List view
+  event.preventDefault();
+  cards.classList.add("list");
+});
+
+document.addEventListener("click", function (event) {
+  if (!event.target.matches(".grid")) return;
+
+  // List view
+  event.preventDefault();
+  cards.classList.remove("list");
+});
+
 //request json for business info
 const requestURL = '../script/business.json';
 
